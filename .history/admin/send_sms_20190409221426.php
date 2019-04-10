@@ -41,7 +41,9 @@
 
           <!-- Content Row -->
           <!-- Dashboard Cards -->
-          <?php include 'dashboard_cards.php' ?>
+          <?php 
+          //include 'dashboard_cards.php' 
+          ?>
           <!-- Dashboard Cards End -->
 
           <!-- Content Row -->
@@ -49,11 +51,15 @@
           <div class="row">
 
             <!-- Area Chart -->
-            <?php include 'area_chart.php' ?>
+            <?php 
+            //include 'area_chart.php'
+             ?>
             <!-- Area Chart End-->
 
             <!-- Pie Chart -->
-            <?php include 'pie_chart.php' ?>
+            <?php
+            // include 'pie_chart.php';
+             ?>
             <!-- Pie Chart End -->
           </div>
 
@@ -93,7 +99,9 @@
               </div>
 
               <!-- Color System -->
-              <?php include 'color_dashboard.php';?>
+              <?php 
+              //include 'colot_dashboard.php';
+              ?>
               <!-- Color System End -->
 
 

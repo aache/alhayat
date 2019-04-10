@@ -93,7 +93,6 @@
               </div>
 
               <!-- Color System -->
-              <?php include 'color_dashboard.php';?>
               <!-- Color System End -->
 
 

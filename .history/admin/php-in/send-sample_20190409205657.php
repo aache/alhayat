@@ -4,7 +4,7 @@
 	
 	// Message details
 	$numbers = array(919082467823);
-	$sender = urlencode('TXTLCL');
+	$sender = urlencode('ALHAYAT');
 	$message = rawurlencode('We Thank you for wisiting AL HAYAT HOSPITAL');
  
 	$numbers = implode(',', $numbers);

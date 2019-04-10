@@ -93,7 +93,7 @@
               </div>
 
               <!-- Color System -->
-              <?php include 'color_dashboard.php';?>
+              <?php include 'colot_dashboard.php';?>
               <!-- Color System End -->
 
 

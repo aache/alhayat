@@ -3,7 +3,7 @@
 	$apiKey = urlencode('XvoxziAYq70-274NhCzAjOIiOPfBwL1VtQCL9xJi3Q');
 	
 	// Message details
-	$numbers = array(919082467823);
+	$numbers = array(8446165070);
 	$sender = urlencode('TXTLCL');
 	$message = rawurlencode('We Thank you for wisiting AL HAYAT HOSPITAL');
  
