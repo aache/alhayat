@@ -7,6 +7,5 @@ if (mysqli_connect_errno())
      echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-  $sql_select_contact = "select contact_name , contact_no from contacts";
-  
+  $sql_select_contact = "select contact_name , contact_no from contact";
 ?>

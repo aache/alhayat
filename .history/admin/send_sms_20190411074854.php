@@ -78,11 +78,11 @@
                 <div class="card-body">
                  <div class="table-responsive">
                    <table class="table table-bordered">
-                     <?php $result = mysqli_query($con,$sql_select_contact);
-                              if (mysqli_num_rows($result) > 0) {
-                                while($row = mysqli_fetch_assoc($result)){
+                     <?php $result_select_contact = $con->query($sql_select_contact);
+                              if ($result->num_rows > 0) {
+                                while($row = $result->fetch_assoc()){
                      ?>
-                     <tr><td><?php echo $row["contact_name"];?></td><td><?php echo $row["contact_no"];?></td><td><a class="btn-circle btn-sm btn-success text-center"><i class="fa fa-check"></i></a></td></tr>
+                     <tr><td><?php echo $row[contact_name];?></td><td><?php echo $row[contact_number];?></td><td><a class="btn-circle btn-sm btn-success text-center"><i class="fa fa-check"></i></a></td></tr>
                               <?php  
                                   }
                                 }
