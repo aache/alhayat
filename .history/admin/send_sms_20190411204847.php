@@ -37,7 +37,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Send Message</h1>
-            <a href="#"  data-toggle="modal" data-target="#addContactModal" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i>Add Contact</a>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
           <!-- Content Row -->
@@ -68,7 +68,7 @@
           <div class="row">
 
             <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-5 mb-4">
 
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
@@ -77,46 +77,23 @@
                 </div>
                 <div class="card-body">
                  <div class="table-responsive">
-                   <table class="table table-bordered" id="dataTable">
-                   <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Contact</th>
-                      <th></th>
-
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Contact</th>
-                      <th></th>
-                      
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <?php $result = mysqli_query($con,$sql_select_contact);
+                   <table class="table table-bordered">
+                     <?php $result = mysqli_query($con,$sql_select_contact);
                               if (mysqli_num_rows($result) > 0) {
                                 while($row = mysqli_fetch_assoc($result)){
                      ?>
-                              <tr>
-                              <td><?php echo $row["contact_name"];?></td>
-                              <td><?php echo $row["contact_no"];?></td>
-                              <td><a onclick="toggleContact(<?php echo $row['contact_id']; ?>,'<?php echo $row['contact_no']; ?>')" id="check_num<?php echo $row["contact_id"];?>" class="btn-circle btn-sm btn-primary text-center">
-                              <i id="check_num_icon<?php echo $row["contact_id"];?>" class="fa fa-plus"></i>
-                              </a></td></tr>
+                     <tr><td><?php echo $row["contact_name"];?></td><td><?php echo $row["contact_no"];?></td><td><a class="btn-circle btn-sm btn-success text-center"><i class="fa fa-check"></i></a></td></tr>
                               <?php  
                                   }
                                 }
                             ?>
-                            </tbody>
                     </table>
                  </div>
                   
                 </div>
               </div>
         </div>
-        <div class="col-lg-6 mb-4">
+        <div class="col-lg-7 mb-4">
 
           <!-- Project Card Example -->
           <div class="card shadow mb-4">
@@ -125,7 +102,7 @@
             </div>
             <div class="card-body">
               <h4 class="medium font-weight-bold">Message</h4>
-              <textarea id="message" style="height:200px;" class="form-control">
+              <textarea style="height:200px;" class="form-control">
               </textarea>
               <div style="padding:10px;">
                   <button class="btn btn-sm btn-primary" onClick="sendSMS()">Send</button>
@@ -165,7 +142,6 @@
 
   <!-- Logout Modal-->
   <?php include 'logout_modal.php' ;?>
-  <?php include 'add_contact.php' ;?>
   <!-- Logout Modal End--> 
 
   <!-- Bootstrap core JavaScript-->
@@ -178,11 +154,6 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
 
-  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="js/demo/datatables-demo.js"></script>
   <!-- Page level plugins -->
   <!--script src="vendor/chart.js/Chart.min.js"></script-->
 
@@ -190,44 +161,10 @@
   <!--script src="js/demo/chart-area-demo.js"></script-->
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
-      var numbers = [];
       function sendSMS(){
-        $.post("php-in/send-sample.php", {numbers: numbers, message : $('#message').val()}, function(result){
-            console.log (result); 
-            location.reload();
-        });
-      }
-
-      function toggleContact(id,number){
-        if(numbers.indexOf(number)==-1){
-          numbers.push(number);
-          $("#check_num"+ id ).removeClass("btn-primary");
-          $("#check_num_icon"+ id ).removeClass("fa-plus");
-          $("#check_num"+ id ).addClass("btn-success");
-          $("#check_num_icon"+ id ).addClass("fa-check");
-        }else{
-          numbers = remove_array_element(numbers, number);
-          $("#check_num"+ id ).addClass("btn-primary");
-          $("#check_num_icon"+ id ).addClass("fa-plus");
-          $("#check_num"+ id ).removeClass("btn-success");
-          $("#check_num_icon"+ id ).removeClass("fa-check");
-        }
-         
-      }
-
-      function remove_array_element(array, n)
-        {
-          var index = array.indexOf(n);
-          if (index > -1) {
-          array.splice(index, 1);
-        }
-        return array;
-      }
-
-      function addContact(){
-        $.post("add_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
-          console.log(result); 
-          location.reload();
+        numbers = ['9082467823' , '9561599895'];
+        $.post("send-sample.php", {numbers: numbers}, function(result){
+            $("#resp").html(result);
         });
       }
   </script>

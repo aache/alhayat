@@ -193,8 +193,7 @@
       var numbers = [];
       function sendSMS(){
         $.post("php-in/send-sample.php", {numbers: numbers, message : $('#message').val()}, function(result){
-            console.log (result); 
-            location.reload();
+            //$("#resp").html(result);
         });
       }
 
@@ -227,7 +226,7 @@
       function addContact(){
         $.post("add_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
           console.log(result); 
-          location.reload();
+          //location.reload();
         });
       }
   </script>

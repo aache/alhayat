@@ -102,8 +102,8 @@
                               <tr>
                               <td><?php echo $row["contact_name"];?></td>
                               <td><?php echo $row["contact_no"];?></td>
-                              <td><a onclick="toggleContact(<?php echo $row['contact_id']; ?>,'<?php echo $row['contact_no']; ?>')" id="check_num<?php echo $row["contact_id"];?>" class="btn-circle btn-sm btn-primary text-center">
-                              <i id="check_num_icon<?php echo $row["contact_id"];?>" class="fa fa-plus"></i>
+                              <td><a onclick="toggleContact(<?php echo $row['contact_id']; ?>,'<?php echo $row['contact_no']; ?>')" id="check_num<?php echo $row["contact_id"];?>" class="btn-circle btn-sm btn-success text-center">
+                              <i id="check_num_icon<?php echo $row["contact_id"];?>" class="fa fa-check"></i>
                               </a></td></tr>
                               <?php  
                                   }
@@ -125,7 +125,7 @@
             </div>
             <div class="card-body">
               <h4 class="medium font-weight-bold">Message</h4>
-              <textarea id="message" style="height:200px;" class="form-control">
+              <textarea style="height:200px;" class="form-control">
               </textarea>
               <div style="padding:10px;">
                   <button class="btn btn-sm btn-primary" onClick="sendSMS()">Send</button>
@@ -192,27 +192,26 @@
   <script type="text/javascript">
       var numbers = [];
       function sendSMS(){
-        $.post("php-in/send-sample.php", {numbers: numbers, message : $('#message').val()}, function(result){
-            console.log (result); 
-            location.reload();
+        $.post("php-in/send-sample.php", {numbers: numbers}, function(result){
+            //$("#resp").html(result);
         });
       }
 
       function toggleContact(id,number){
         if(numbers.indexOf(number)==-1){
           numbers.push(number);
-          $("#check_num"+ id ).removeClass("btn-primary");
-          $("#check_num_icon"+ id ).removeClass("fa-plus");
-          $("#check_num"+ id ).addClass("btn-success");
-          $("#check_num_icon"+ id ).addClass("fa-check");
-        }else{
-          numbers = remove_array_element(numbers, number);
-          $("#check_num"+ id ).addClass("btn-primary");
-          $("#check_num_icon"+ id ).addClass("fa-plus");
           $("#check_num"+ id ).removeClass("btn-success");
           $("#check_num_icon"+ id ).removeClass("fa-check");
+          $("#check_num"+ id ).addClass("btn-danger");
+          $("#check_num_icon"+ id ).addClass("fa-times");
+        }else{
+          numbers = remove_array_element(numbers, number);
+          $("#check_num"+ id ).removeClass("btn-danger");
+          $("#check_num_icon"+ id ).removeClass("fa-times");
+          $("#check_num"+ id ).addClass("btn-success");
+          $("#check_num_icon"+ id ).addClass("fa-check");
         }
-         
+        
       }
 
       function remove_array_element(array, n)
@@ -226,8 +225,7 @@
 
       function addContact(){
         $.post("add_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
-          console.log(result); 
-          location.reload();
+          
         });
       }
   </script>

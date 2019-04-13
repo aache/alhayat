@@ -13,10 +13,19 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item active">
-  <a class="nav-link" href="index.php">
+  <a class="nav-link" href="index.html">
     <i class="fas fa-fw fa-tachometer-alt"></i>
     <span>Dashboard</span></a>
 </li>
+
+<!-- Divider -->
+<hr class="sidebar-divider">
+
+<!-- Heading -->
+<div class="sidebar-heading">
+  Interface
+</div>
+
 
 <!-- Divider -->
 <hr class="sidebar-divider">
@@ -28,23 +37,16 @@
 
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-  <a class="nav-link" href="send_sms.php">
+  <a class="nav-link" href="charts.html">
     <i class="fas fa-fw fa-chart-area"></i>
-    <span>Send SMS</span></a>
+    <span>Charts</span></a>
 </li>
 
-<!-- Nav Item - Charts -->
+<!-- Nav Item - Tables -->
 <li class="nav-item">
-  <a class="nav-link" href="send_sms.php">
-    <i class="fas fa-fw fa-chart-area"></i>
-    <span>Videos Upload</span></a>
-</li>
-
-<!-- Nav Item - Charts -->
-<li class="nav-item">
-  <a class="nav-link" href="send_sms.php">
-    <i class="fas fa-fw fa-chart-area"></i>
-    <span>Gallery Upload</span></a>
+  <a class="nav-link" href="tables.html">
+    <i class="fas fa-fw fa-table"></i>
+    <span>Tables</span></a>
 </li>
 
 <!-- Divider -->

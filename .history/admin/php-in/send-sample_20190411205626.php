@@ -4,7 +4,7 @@
 	
 	// Message details
 	$numbers = $_POST['numbers'];//array(919082467823);
-	$sender = urlencode('TXTLCL');
+	$sender = urlencode('TXTLCLABC');
 	$message = rawurlencode($_POST['message']);
  
 	$numbers = implode(',', $numbers);

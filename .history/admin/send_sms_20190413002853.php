@@ -125,7 +125,7 @@
             </div>
             <div class="card-body">
               <h4 class="medium font-weight-bold">Message</h4>
-              <textarea id="message" style="height:200px;" class="form-control">
+              <textarea style="height:200px;" class="form-control">
               </textarea>
               <div style="padding:10px;">
                   <button class="btn btn-sm btn-primary" onClick="sendSMS()">Send</button>
@@ -192,9 +192,8 @@
   <script type="text/javascript">
       var numbers = [];
       function sendSMS(){
-        $.post("php-in/send-sample.php", {numbers: numbers, message : $('#message').val()}, function(result){
-            console.log (result); 
-            location.reload();
+        $.post("php-in/send-sample.php", {numbers: numbers}, function(result){
+            //$("#resp").html(result);
         });
       }
 
@@ -212,7 +211,7 @@
           $("#check_num"+ id ).removeClass("btn-success");
           $("#check_num_icon"+ id ).removeClass("fa-check");
         }
-         
+        alert(numbers); 
       }
 
       function remove_array_element(array, n)
@@ -227,7 +226,7 @@
       function addContact(){
         $.post("add_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
           console.log(result); 
-          location.reload();
+          //location.reload();
         });
       }
   </script>
