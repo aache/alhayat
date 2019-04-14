@@ -1,0 +1,15 @@
+create database alhayat ; 
+
+CREATE TABLE `contacts` (
+  `contact_id` int(11) NOT NULL,
+  `contact_name` varchar(100) NOT NULL,
+  `contact_no` varchar(20) NOT NULL,
+  `contact_grp` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`contact_id`);
+
+ALTER TABLE `contacts`
+  MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+COMMIT;
