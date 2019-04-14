@@ -42,7 +42,7 @@
 
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-  <a class="nav-link" href="gallery_upload.php">
+  <a class="nav-link" href="send_sms.php">
     <i class="fas fa-fw fa-chart-area"></i>
     <span>Gallery Upload</span></a>
 </li>
