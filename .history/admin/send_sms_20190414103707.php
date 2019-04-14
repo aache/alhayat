@@ -73,7 +73,7 @@
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Contacts <!--button class="float-right btn btn-primary btn-sm" onclick="selectAll()">Select All</button--></h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Contacts <button class="float-right btn btn-primary btn-sm" onclick="selectAll()">Select All</button></h6>
                   
                 </div>
                 <div class="card-body">
@@ -103,8 +103,8 @@
                               <tr>
                               <td><?php echo $row["contact_name"];?></td>
                               <td><?php echo $row["contact_no"];?></td>
-                              <td><a onclick="toggleContact(<?php echo $row['contact_id']; ?>,'<?php echo $row['contact_no']; ?>')" id="check_num<?php echo $row["contact_id"];?>" class="btn-circle check-btn btn-sm btn-success text-center">
-                              <i id="check_num_icon<?php echo $row["contact_id"];?>" class="fa fa-check i-fa"></i>
+                              <td><a onclick="toggleContact(<?php echo $row['contact_id']; ?>,'<?php echo $row['contact_no']; ?>')" id="check_num<?php echo $row["contact_id"];?>" class="btn-circle check-btn btn-sm btn-primary text-center">
+                              <i id="check_num_icon<?php echo $row["contact_id"];?>" class="fa fa-plus"></i>
                               </a></td></tr>
                               <?php  
                                   }
@@ -192,12 +192,6 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
       var numbers = [];
-      $( document ).ready(function() {
-      
-        $.get("all_contacts_controller.php", function(result){
-            numbers = JSON.parse(result); 
-        });
-      });
       function sendSMS(){
         $.post("php-in/send-sample.php", {numbers: numbers, message : $('#message').val()}, function(result){
             console.log (result); 
@@ -219,9 +213,15 @@
           $("#check_num"+ id ).removeClass("btn-success");
           $("#check_num_icon"+ id ).removeClass("fa-check");
         }
-         console.log(numbers);
+         
       }
 
+      function selectAll(){
+        $(".check-btn").addClass("fa-check"); 
+        $(".check-btn").toggleClass("fa-plus"); 
+        $(".check-btn").addClass("btn-success"); 
+        $(".check-btn").removeClass("btn-primary"); 
+      }
 
       function remove_array_element(array, n)
         {

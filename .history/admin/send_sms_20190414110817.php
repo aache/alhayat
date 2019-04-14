@@ -193,9 +193,9 @@
   <script type="text/javascript">
       var numbers = [];
       $( document ).ready(function() {
-      
+        $.get
         $.get("all_contacts_controller.php", function(result){
-            numbers = JSON.parse(result); 
+            numbers = result;
         });
       });
       function sendSMS(){
@@ -219,7 +219,7 @@
           $("#check_num"+ id ).removeClass("btn-success");
           $("#check_num_icon"+ id ).removeClass("fa-check");
         }
-         console.log(numbers);
+         
       }
 
 

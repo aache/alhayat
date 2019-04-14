@@ -192,12 +192,6 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
       var numbers = [];
-      $( document ).ready(function() {
-      
-        $.get("all_contacts_controller.php", function(result){
-            numbers = JSON.parse(result); 
-        });
-      });
       function sendSMS(){
         $.post("php-in/send-sample.php", {numbers: numbers, message : $('#message').val()}, function(result){
             console.log (result); 
@@ -219,7 +213,7 @@
           $("#check_num"+ id ).removeClass("btn-success");
           $("#check_num_icon"+ id ).removeClass("fa-check");
         }
-         console.log(numbers);
+         
       }
 
 

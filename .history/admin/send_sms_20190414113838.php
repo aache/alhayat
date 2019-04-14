@@ -195,7 +195,7 @@
       $( document ).ready(function() {
       
         $.get("all_contacts_controller.php", function(result){
-            numbers = JSON.parse(result); 
+            numbers = result; 
         });
       });
       function sendSMS(){
