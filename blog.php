@@ -57,16 +57,17 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-	      <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
+	      <p class="button-custom order-lg-last mb-0"><a href="appointment.php" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="doctor.html" class="nav-link">Doctor</a></li>
-	        	<li class="nav-item"><a href="department.html" class="nav-link">Departments</a></li>
-	        	<li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+        <ul class="navbar-nav mr-auto">
+	        	<li class="nav-item active"><a href="index.php" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="videos.php" class="nav-link">Videos</a></li>
+	        	<li class="nav-item"><a href="department.php" class="nav-link">Gallery</a></li>
+	        	<li class="nav-item"><a href="pricing.php" class="nav-link">Achievement</a></li>
+	        	<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+						<li class="nav-item"><a href="blog.php" class="nav-link">Events</a></li>
+	          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -78,72 +79,166 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">Contact Us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-2 bread">Blog</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+		
+		<section class="ftco-section bg-light">
 			<div class="container">
-				<div class="row d-flex align-items-stretch no-gutters">
-					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
-						<form action="#">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+				<div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+								<div class="meta-date text-center p-2">
+                  <span class="day">23</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="d-flex align-items-center mt-4">
+	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+								<div class="meta-date text-center p-2">
+                  <span class="day">23</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="d-flex align-items-center mt-4">
+	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+								<div class="meta-date text-center p-2">
+                  <span class="day">23</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="d-flex align-items-center mt-4">
+	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
               </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+            </div>
+          </div>
+					<div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
+								<div class="meta-date text-center p-2">
+                  <span class="day">23</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="d-flex align-items-center mt-4">
+	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
               </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
+								<div class="meta-date text-center p-2">
+                  <span class="day">23</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="d-flex align-items-center mt-4">
+	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
               </div>
-            </form>
-					</div>
-					<div class="col-md-6 d-flex align-items-stretch">
-						<div id="map"></div>
-					</div>
-				</div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
+								<div class="meta-date text-center p-2">
+                  <span class="day">23</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="d-flex align-items-center mt-4">
+	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters my-5">
+          <div class="col text-center">
+            <div class="block-27">
+              <ul>
+                <li><a href="#"><i class="ion-ios-arrow-back"></i></a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><i class="ion-ios-arrow-forward"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
 			</div>
 		</section>
-		
-		<section class="ftco-section contact-section">
-      <div class="container">
-        <div class="row d-flex mb-5 contact-info">
-          <div class="col-md-12 mb-4">
-            <h2 class="h4">Contact Information</h2>
-          </div>
-          <div class="w-100"></div>
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-3 d-flex">
-          	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Website</span> <a href="#">yoursite.com</a></p>
-	          </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">

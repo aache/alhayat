@@ -57,16 +57,17 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-	      <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
+	      <p class="button-custom order-lg-last mb-0"><a href="appointment.php" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link pl-0">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="doctor.html" class="nav-link">Doctor</a></li>
-	        	<li class="nav-item"><a href="department.html" class="nav-link">Departments</a></li>
-	        	<li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	        	<li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				<ul class="navbar-nav mr-auto">
+	        	<li class="nav-item active"><a href="index.php" class="nav-link pl-0">Home</a></li>
+	        	<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
+	        	<li class="nav-item"><a href="videos.php" class="nav-link">Videos</a></li>
+	        	<li class="nav-item"><a href="department.php" class="nav-link">Gallery</a></li>
+	        	<li class="nav-item"><a href="pricing.php" class="nav-link">Achievement</a></li>
+	        	<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+						<li class="nav-item"><a href="blog.php" class="nav-link">Events</a></li>
+	          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -78,166 +79,137 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread">Blog</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-2 bread">Pricing</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Pricing <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
     </section>
 		
-		<section class="ftco-section bg-light">
-			<div class="container">
-				<div class="row">
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-					<div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
-								<div class="meta-date text-center p-2">
-                  <span class="day">23</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Scary Thing That You Don’t Get Enough Sleep</a></h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <div class="d-flex align-items-center mt-4">
-	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-	                <p class="ml-auto mb-0">
-	                	<a href="#" class="mr-2">Admin</a>
-	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-	                </p>
-                </div>
-              </div>
-            </div>
+		<section class="ftco-section ftco-departments bg-light">
+    	<div class="container">
+    		<div class="row departments p-5 mb-5 bg-white">
+      		<div class="col-lg-4 order-lg-last d-flex align-items-stretch">
+      			<div class="img d-flex align-self-stretch" style="background-image: url(images/dept-3.jpg);"></div>
+      		</div>
+      		<div class="col-md-8">
+      			<h2>Dental Deparments</h2>
+      			<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+						<div class="row mt-5 pt-2">
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
+									<div class="text">
+										<h3>Primary Care</h3>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
+									<div class="text">
+										<h3>Lab Test</h3>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
+									<div class="text">
+										<h3>Symptom Check</h3>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="services-2 d-flex">
+									<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
+									<div class="text">
+										<h3>Heart Rate</h3>
+										<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+      		</div>
+      	</div>
+    		<div class="row justify-content-center my-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Pricing</span>
+            <h2 class="mb-4">Our Pricing</h2>
+            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
           </div>
         </div>
-        <div class="row no-gutters my-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#"><i class="ion-ios-arrow-back"></i></a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#"><i class="ion-ios-arrow-forward"></i></a></li>
-              </ul>
-            </div>
-          </div>
+    		<div class="row">
+        	<div class="col-md-3 ftco-animate">
+        		<div class="pricing-entry pb-5 text-center">
+        			<div>
+	        			<h3 class="mb-4">Basic</h3>
+	        			<p><span class="price">$24.50</span> <span class="per">/ session</span></p>
+	        		</div>
+        			<ul>
+        				<li>Diagnostic Services</li>
+								<li>Professional Consultation</li>
+								<li>Tooth Implants</li>
+								<li>Surgical Extractions</li>
+								<li>Teeth Whitening</li>
+        			</ul>
+        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
+        		</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="pricing-entry pb-5 text-center">
+        			<div>
+	        			<h3 class="mb-4">Standard</h3>
+	        			<p><span class="price">$34.50</span> <span class="per">/ session</span></p>
+	        		</div>
+        			<ul>
+        				<li>Diagnostic Services</li>
+								<li>Professional Consultation</li>
+								<li>Tooth Implants</li>
+								<li>Surgical Extractions</li>
+								<li>Teeth Whitening</li>
+        			</ul>
+        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
+        		</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="pricing-entry active pb-5 text-center">
+        			<div>
+	        			<h3 class="mb-4">Premium</h3>
+	        			<p><span class="price">$54.50</span> <span class="per">/ session</span></p>
+	        		</div>
+        			<ul>
+        				<li>Diagnostic Services</li>
+								<li>Professional Consultation</li>
+								<li>Tooth Implants</li>
+								<li>Surgical Extractions</li>
+								<li>Teeth Whitening</li>
+        			</ul>
+        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
+        		</div>
+        	</div>
+        	<div class="col-md-3 ftco-animate">
+        		<div class="pricing-entry pb-5 text-center">
+        			<div>
+	        			<h3 class="mb-4">Platinum</h3>
+	        			<p><span class="price">$89.50</span> <span class="per">/ session</span></p>
+	        		</div>
+        			<ul>
+        				<li>Diagnostic Services</li>
+								<li>Professional Consultation</li>
+								<li>Tooth Implants</li>
+								<li>Surgical Extractions</li>
+								<li>Teeth Whitening</li>
+        			</ul>
+        			<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
+        		</div>
+        	</div>
         </div>
-			</div>
-		</section>
+    	</div>
+    </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
