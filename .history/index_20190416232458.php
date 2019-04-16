@@ -50,11 +50,11 @@
 
 </div>
 
-<!--div style="padding:20px">
+<div style="padding:20px">
   <h2>Overlay with Text</h2>
   <button onclick="on()">Turn on overlay effect</button>
-</div-->
-
+</div>
+<script src="js/overlay.js"></script>
 <!--
 <script>
 function on() {
@@ -68,8 +68,8 @@ function off() {
 	Overlay End-->
 
 			<!--Start nav-->
-	<?php include "topbarlogo.php"; ?>
-	<?php include  "menubar.php";?>  
+	<?php echo file_get_contents("topbarlogo.php"); ?>
+	<?php echo file_get_contents("menubar.php");?>  
     <!-- END nav -->
     
     <section class="home-slider owl-carousel">
@@ -955,8 +955,8 @@ function off() {
 		
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
-				<?php include "footbar.php";?>
-        <?php include "footerbar.php";?>
+				<?php echo file_get_contents("footbar.php");?>
+        <?php echo file_get_contents("footerbar.php");?>
       </div>
     </footer>
     
@@ -983,6 +983,6 @@ function off() {
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/overlay.js"></script>
+    
   </body>
 </html>
