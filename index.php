@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <title>Dr.care - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,9 +26,48 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/overlay.css">
+
   </head>
   <body>
-		<!--Start nav-->
+	<!-- Overlay-->
+	<div id="overlay" onclick="off()">
+ 
+	<div id="text">Al-Hayat</div>
+	<div class="coupon">
+	
+	<div class="container" style="background-color:white">
+    <h2><b>20% OFF YOUR PURCHASE</b></h2> 
+    <p>Lorem ipsum dolor sit amet, et nam pertinax gloriatur. Sea te minim soleat senserit, ex quo luptatum tacimates voluptatum, salutandi delicatissimi eam ea. In sed nullam laboramus appellantur, mei ei omnis dolorem mnesarchum.</p>
+		<div class="container">
+    <p class="expire">Expires: Jan 03, 2021</p>
+  </div>
+	</div>
+ 
+	</div>
+	<button class="close" onclick="off()">x</button>
+
+</div>
+
+<div style="padding:20px">
+  <h2>Overlay with Text</h2>
+  <button onclick="on()">Turn on overlay effect</button>
+</div>
+<script src="js/overlay.js"></script>
+<!--
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+	Overlay End-->
+
+			<!--Start nav-->
 	<?php echo file_get_contents("topbarlogo.php"); ?>
 	<?php echo file_get_contents("menubar.php");?>  
     <!-- END nav -->
