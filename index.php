@@ -78,7 +78,7 @@ function off() {
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-6 text ftco-animate">
-            <h1 class="mb-4">Helping Your <span>Stay Happy One</span></h1>
+            <h1 class="mb-4">Your Medical<span>Problem Is Our Primary Concern</span></h1>
             <h3 class="subheading">Everyday We Bring Hope and Smile to the Patient We Serve</h3>
             <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p>
           </div>
@@ -91,7 +91,7 @@ function off() {
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-6 text ftco-animate">
-            <h1 class="mb-4">We Care <span>About Your Health</span></h1>
+            <h1 class="mb-4">To Treat Each<span>Patient with empathy,promptly and completely</span></h1>
             <h3 class="subheading">Your Health is Our Top Priority with Comprehensive, Affordable medical.</h3>
             <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">View our works</a></p>
           </div>
@@ -159,8 +159,9 @@ function off() {
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
 	          	<div class="pl-md-5 ml-md-5">
-		          	<span class="subheading">About Dr.care</span>
-		            <h2 class="mb-4" style="font-size: 28px;">Medical specialty concerned with the care of acutely ill hospitalized patients</h2>
+		          	<span class="subheading">About Al-Hayat</span>
+		            <h2 class="mb-4" style="font-size: 28px;">AL-HAYAT NURSING HOME founded by DR.MOHAMMED ASIF ANWAR ALI ANSARI in 
+                        2006 with the intention of providing quality care at Affordable Cost.</h2>
 	            </div>
 	          </div>
 	          <div class="pl-md-5 ml-md-5 mb-5">
@@ -525,10 +526,14 @@ function off() {
 								<div class="img align-self-stretch" style="background-image: url(images/doc-1.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
-								<h3>Dr. Lloyd Wilson</h3>
-								<span class="position mb-2">Neurologist</span>
+								<h3>Dr. MOHAMMED ASIF ANSARI</h3>
+								<span class="position mb-2">Laparoscopic,Anorectal and General Surgeon</span>
 								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+									<p>M.S(GEN.SURGERY),FMAS,FIAGES
+									,FAIS,FICS(USA).</p>
+ <p>Associate professor and consultant surgeon GRANT MEDICAL COLLEGE,DEPT OF GEN.SURGERY.J.J HOSPITAL MUMBAI.
+</p>
+<h5>Time:   5.30pm-8pm (Monday-Saturday)</h5>
 									<ul class="ftco-social text-center">
 		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -545,10 +550,10 @@ function off() {
 								<div class="img align-self-stretch" style="background-image: url(images/doc-2.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
-								<h3>Dr. Rachel Parker</h3>
-								<span class="position mb-2">Ophthalmologist</span>
+								<h3>Dr. NAILA ASIF ANSARI</h3>
+								<span class="position mb-2">Infertility specialist,Laparoscopic surgeon,Gynaecologist and Obstetrician </span>
 								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+									<p>DGO,CPS,FCPS,DFP,FMAS,MBBS.</p>
 									<ul class="ftco-social text-center">
 		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -565,10 +570,10 @@ function off() {
 								<div class="img align-self-stretch" style="background-image: url(images/doc-3.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
-								<h3>Dr. Ian Smith</h3>
-								<span class="position mb-2">Dentist</span>
+								<h3>Dr. KHALID ANSARI</h3>
+								<span class="position mb-2">PHYSICIAN AND INTENSIVIST</span>
 								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+									<p>M.D(MEDICINE);DNB(CRITICAL CARE).</p>
 									<ul class="ftco-social text-center">
 		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>

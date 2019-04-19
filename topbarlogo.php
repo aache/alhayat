@@ -8,15 +8,15 @@
 		    		<div class="row d-flex">
 			    		<div class="col-md-4 pr-4 d-flex topper align-items-center">
 			    			<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-map"></span></div>
-						    <span class="text">Address: 198 West 21th Street, Suite 721 New York NY 10016</span>
+						    <span class="text">Address: AL-HAYAT NURSING HOME,Near Old Zakat Naka,Beside ANAND CINEMA,Gaibi Nagar BHIWANDI.</span>
 					    </div>
 					    <div class="col-md pr-6 d-flex topper align-items-center">
 					    	<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">Email: youremail@email.com</span>
+						    <span class="text">Email: alhayatnursinghome2006@gmail.com</span>
 					    </div>
 					    <div class="col-md pr-6 d-flex topper align-items-center">
 					    	<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">Phone: + 1235 2355 98</span>
+						    <span class="text">Phone: 02522-251658,02522-226223</span>
 					    </div>
 				    </div>
 			    </div>

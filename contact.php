@@ -28,8 +28,8 @@
   </head>
   <body>
     <!--Start nav-->
-  <?php echo file_get_contents("topbarlogo.php"); ?>
-  <?php echo file_get_contents("menubar.php");?> 
+  <?php include "topbarlogo.php"; ?>
+  <?php include "menubar.php";?> 
 	  <!-- END nav -->
     
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
@@ -82,22 +82,27 @@
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
           	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+	            <p><span>Address : </span> AL-HAYAT NURSING HOME.  1406,
+              AYYUB DOODHWALA COMPLEX,A-WING,GROUND And FIRST FLOOR.
+              BESIDE ANAND CINEMA GAIBI NAGAR,BHIWANDI 421302.
+              </p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+	            <p><span>Phone : </span> <a href="tel://02522-251658">02522-251658</a>,
+              <a href="tel://02522-226223">02522-226223</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+            <p><span>Email:</span> <a href="mailto:damasif4@gmail.com">damasif4@gmail.com</a>,
+              <a href="alhayatnursinghome2006@gmail.com">alhayatnursinghome2006@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+	            <p><span>Website</span> <a href="#">www.al-hayat.co.in</a></p>
 	          </div>
           </div>
         </div>
@@ -106,8 +111,8 @@
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
-        <?php echo file_get_contents("footbar.php");?>
-        <?php echo file_get_contents("footerbar.php");?>
+        <?php include "footbar.php";?>
+        <?php include "footerbar.php";?>
       </div>
     </footer>
     
