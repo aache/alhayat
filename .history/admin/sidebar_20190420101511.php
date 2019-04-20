@@ -48,7 +48,7 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="popup_setting.php">
+  <a class="nav-link" href="gallery_upload.php">
     <i class="fas fa-fw fa-chart-area"></i>
     <span>Popup</span></a>
 </li>
