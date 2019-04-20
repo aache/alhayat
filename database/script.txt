@@ -16,3 +16,8 @@ COMMIT;
 
 -- sample insert
 -- insert into contacts (contact_name , contact_no , contact_grp) values('aaqib','9561599895','general'); 
+
+CREATE TABLE `queries`
+ ( `queries_id` INT NOT NULL AUTO_INCREMENT , `uname` VARCHAR(50) NOT NULL ,
+  `email` VARCHAR(50) NOT NULL , `question` VARCHAR(500) NOT NULL ,
+   PRIMARY KEY (`queries_id`)) ENGINE = InnoDB; 
