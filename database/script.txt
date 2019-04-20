@@ -21,3 +21,11 @@ CREATE TABLE `queries`
  ( `queries_id` INT NOT NULL AUTO_INCREMENT , `uname` VARCHAR(50) NOT NULL ,
   `email` VARCHAR(50) NOT NULL , `question` VARCHAR(500) NOT NULL ,
    PRIMARY KEY (`queries_id`)) ENGINE = InnoDB; 
+
+-----------videos table------------
+   CREATE TABLE `videos` (
+ `videos_id` int(11) NOT NULL AUTO_INCREMENT,
+ `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ `link` varchar(50) NOT NULL,
+ PRIMARY KEY (`videos_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1
