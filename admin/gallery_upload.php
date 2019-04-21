@@ -40,40 +40,77 @@
             
           </div>
 
-          <!-- Content Row -->
-          <!-- Dashboard Cards -->
-          <?php 
-          //include 'dashboard_cards.php' 
-          ?>
-          <!-- Dashboard Cards End -->
+          <?php
+            $target_dir = "gallery/";
+            $uploadOk = 1;
 
-          <!-- Content Row -->
-
-          <div class="row">
-
-            <!-- Area Chart -->
-            <?php 
-            //include 'area_chart.php'
-             ?>
-            <!-- Area Chart End-->
-
-            <!-- Pie Chart -->
-            <?php
-             //include 'pie_chart.php';
-             ?>
-            <!-- Pie Chart End -->
-          </div>
-
-          <!-- Content Row -->
-              <!-- Color System -->
-              <?php 
-              //include 'color_dashboard.php';
-              ?>
-              <!-- Color System End -->
-
-          
-        
-        <!-- /.container-fluid -->
+/*echo $imageFileType."<br/>";*/
+// Check if image file is a actual image or fake image
+if(isset($_POST["submit"])||!empty($_FILES["fileToUpload"]["name"])) {
+    $target_file =$target_dir.basename($_FILES["fileToUpload"]["name"]);
+    $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+        $check["mime"];
+       /* echo "File is an image - " .  . ".";*/
+        $uploadOk = 1;
+        // Check if file already exists
+        if (file_exists($target_file)) {
+            echo "File already exists.";
+            $uploadOk = 0;
+        }
+        // Check file size
+        if ($_FILES["fileToUpload"]["size"] > 500000) {
+            echo "Sorry, your file is too large.";
+            $uploadOk = 0;
+        }
+            } else {
+     /*   echo "File is not an image.";*/
+        // Allow certain file formats
+        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
+            echo "Only JPG, JPEG & PNG files are allowed.";
+            $uploadOk = 0;
+        }
+        $uploadOk = 0;
+    }
+      
+    // Check if $uploadOk is set to 0 by an error
+    if ($uploadOk == 0) {
+        echo "Sorry, your file was not uploaded.";
+    // if everything is ok, try to upload file
+    } else {
+      $f_name = 'upload-';
+      $directory = "gallery/";
+      $filecount = 0;
+      $files = glob($directory . "*.{jpg,png,gif}",GLOB_BRACE);
+      if ($files){
+                $filecount = count($files)+1;
+                }
+        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], "gallery/{$f_name}{$filecount}.png")) {
+            echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+        } else {
+            echo "Sorry, there was an error uploading your file.";
+        }
+        echo "There are total $filecount files";
+    }
+}
+else{
+    echo "Only JPG, JPEG & PNG files are allowed.";
+}
+?>
+<div class="card shadow mb-4">
+        <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Upload Files</h6>
+        </div>
+        <div class="card-body">
+<form action="gallery_upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload : 
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <button class="btn btn-sm btn-primary" type="submit" name="submit">Upload Image</button>
+</form>
+</div>
+</div>
+          <!-- /.container-fluid -->
 
       
       <!-- End of Main Content -->
