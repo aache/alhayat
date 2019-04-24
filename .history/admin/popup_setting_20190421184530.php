@@ -29,11 +29,6 @@
        <?php
          include 'topbar.php' ; 
        ?>
-
-      <?php include 'connection.php';
-		      $result_select_popup=mysqli_query($con,$sql_select_popup);
-		      $row_select_popup = mysqli_fetch_assoc($result_select_popup);
-	    ?>
         <!-- End of Topbar -->
         
         <!-- Begin Page Content -->
@@ -59,12 +54,12 @@
                   <h6 class="m-0 font-weight-bold text-primary">Popup Content</h6>
                 </div>
                 <div class="card-body">
-                    <h6 style="font-weight : bold">Title</h6>
-                    <div><?php echo $row_select_popup['title'];?></div>
-                    <h6 style="margin-top:20px; font-weight : bold;">Content</h6>
-                    <div style="width:300px;word-wrap: break-word;"><?php echo $row_select_popup['content'];?></div>
-                    <h6 style="margin-top:20px; font-weight : bold;">Footer</h6>
-                    <div><?php echo $row_select_popup['footer'];?></div>
+                    <h6>Title</h6>
+                    <div>This  is a sample  title</div>
+                    <h6>Content</h6>
+                    <div>This  is a sample  content.This  is a sample  content.This  is a sample  content.</div>
+                    <h6>Footer</h6>
+                    <div>This  is a sample  footer.</div>
                 </div>
               </div>
         </div>
@@ -126,12 +121,7 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
      function updatePopup(){
-      $.get("popup_controller.php",{ title: $("#popup_title").val(), content: $("#popup_content").val() , footer: $("#popup_footer").val()  }, function(data, status){
-         console.log("Data: " + data + "\nStatus: " + status);
-         if(data=="SUCCESS"){
-            location.reload();
-         }
-      });
+
      }
   </script>
 </body>

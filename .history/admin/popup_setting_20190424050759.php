@@ -30,7 +30,7 @@
          include 'topbar.php' ; 
        ?>
 
-      <?php include 'connection.php';
+      <?php include 'connection';
 		      $result_select_popup=mysqli_query($con,$sql_select_popup);
 		      $row_select_popup = mysqli_fetch_assoc($result_select_popup);
 	    ?>
@@ -126,12 +126,7 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
      function updatePopup(){
-      $.get("popup_controller.php",{ title: $("#popup_title").val(), content: $("#popup_content").val() , footer: $("#popup_footer").val()  }, function(data, status){
-         console.log("Data: " + data + "\nStatus: " + status);
-         if(data=="SUCCESS"){
-            location.reload();
-         }
-      });
+
      }
   </script>
 </body>

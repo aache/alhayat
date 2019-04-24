@@ -126,10 +126,11 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
      function updatePopup(){
+       console.log($("#popup_footer").val());
       $.get("popup_controller.php",{ title: $("#popup_title").val(), content: $("#popup_content").val() , footer: $("#popup_footer").val()  }, function(data, status){
          console.log("Data: " + data + "\nStatus: " + status);
          if(data=="SUCCESS"){
-            location.reload();
+            //location.reload();
          }
       });
      }

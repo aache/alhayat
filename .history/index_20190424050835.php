@@ -36,7 +36,7 @@
  
 	<div id="text">Al-Hayat</div>
 	<div class="coupon">
-	<?php include 'admin/connection.php';
+	<?php include 'admin/connection';
 		 $result_select_popup=mysqli_query($con,$sql_select_popup);
 		 $row_select_popup = mysqli_fetch_assoc($result_select_popup);
 	?>

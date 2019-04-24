@@ -29,11 +29,6 @@
        <?php
          include 'topbar.php' ; 
        ?>
-
-      <?php include 'connection.php';
-		      $result_select_popup=mysqli_query($con,$sql_select_popup);
-		      $row_select_popup = mysqli_fetch_assoc($result_select_popup);
-	    ?>
         <!-- End of Topbar -->
         
         <!-- Begin Page Content -->
@@ -46,29 +41,100 @@
           </div>
 
           <!-- Content Row -->
+          <!-- Dashboard Cards -->
+          <?php 
+          //include 'dashboard_cards.php' 
+          ?>
+          <!-- Dashboard Cards End -->
+
           <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Area Chart -->
+            <?php 
+            //include 'area_chart.php'
+             ?>
+            <!-- Area Chart End-->
+
+            <!-- Pie Chart -->
+            <?php
+            // include 'pie_chart.php';
+             ?>
+            <!-- Pie Chart End -->
+          </div>
+
           <!-- Content Row -->
           <div class="row">
 
             <!-- Content Column -->
-            <div class="col-lg-7 mb-4">
+            <div class="col-lg-6 mb-4">
 
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Popup Content</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Contacts <!--button class="float-right btn btn-primary btn-sm" onclick="selectAll()">Select All</button--></h6>
+                  
                 </div>
                 <div class="card-body">
-                    <h6 style="font-weight : bold">Title</h6>
-                    <div><?php echo $row_select_popup['title'];?></div>
-                    <h6 style="margin-top:20px; font-weight : bold;">Content</h6>
-                    <div style="width:300px;word-wrap: break-word;"><?php echo $row_select_popup['content'];?></div>
-                    <h6 style="margin-top:20px; font-weight : bold;">Footer</h6>
-                    <div><?php echo $row_select_popup['footer'];?></div>
+                 <div class="table-responsive">
+                   <table class="table table-bordered" id="dataTable">
+                   <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Contact</th>
+                      <th></th>
+
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Contact</th>
+                      <th></th>
+                      
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <?php $result = mysqli_query($con,$sql_select_contact);
+                              if (mysqli_num_rows($result) > 0) {
+                                while($row = mysqli_fetch_assoc($result)){
+                     ?>
+                              <tr>
+                              <td><?php echo $row["contact_name"];?></td>
+                              <td><?php echo $row["contact_no"];?></td>
+                              <td><a onclick="toggleContact(<?php echo $row['contact_id']; ?>,'<?php echo $row['contact_no']; ?>')" id="check_num<?php echo $row["contact_id"];?>" class="btn-circle check-btn btn-sm btn-success text-center">
+                              <i id="check_num_icon<?php echo $row["contact_id"];?>" class="fa fa-check i-fa"></i>
+                              </a></td></tr>
+                              <?php  
+                                  }
+                                }
+                            ?>
+                            </tbody>
+                    </table>
+                 </div>
+                  
                 </div>
               </div>
         </div>
-       
+        <div class="col-lg-6 mb-4">
+
+          <!-- Project Card Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary" id="resp">SMS details</h6>
+            </div>
+            <div class="card-body">
+              <h4 class="medium font-weight-bold">Message</h4>
+              <textarea id="message" style="height:200px;" class="form-control">
+              </textarea>
+              <div style="padding:10px;">
+                  <button class="btn btn-sm btn-primary" onClick="sendSMS()">Send</button>
+              </div>
+            </div>
+          </div>
+
+          </div>
 </div>
               <!-- Color System -->
               <?php 
@@ -126,12 +192,7 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
      function updatePopup(){
-      $.get("popup_controller.php",{ title: $("#popup_title").val(), content: $("#popup_content").val() , footer: $("#popup_footer").val()  }, function(data, status){
-         console.log("Data: " + data + "\nStatus: " + status);
-         if(data=="SUCCESS"){
-            location.reload();
-         }
-      });
+
      }
   </script>
 </body>

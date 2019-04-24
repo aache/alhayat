@@ -98,7 +98,7 @@ else{
     echo "Only JPG, JPEG & PNG files are allowed.";
 }
 ?>
-<div class="col-md-8 card shadow mb-4">
+<div class="card shadow mb-4">
         <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">Upload Files</h6>
         </div>

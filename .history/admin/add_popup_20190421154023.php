@@ -9,13 +9,13 @@
         </div>
         <div class="modal-body">
             <div class="col-md-8 m-2">
-                <input type="text" name="popup_title" id="popup_title" value="<?php echo $row_select_popup['title'];?>" placeholder="Popup Title" class="form-control"/>
+                <input type="text" name="popup_title" id="popup_title" placeholder="Popup Title" class="form-control"/>
             </div>
             <div class="col-md-8 m-2">
-                <textarea name="popup_content"  id="popup_content" placeholder="Content" style="height:250px" class="form-control"><?php echo $row_select_popup['content'];?></textarea>
+                <textarea name="popup_content"  id="popup_content" placeholder="Content" style="height:300px" class="form-control"></textarea>
             </div>
             <div class="col-md-8 m-2">
-            <input type="text" name="popup_footer" id="popup_footer" value="<?php echo $row_select_popup['footer'];?>" placeholder="Popup Footer" class="form-control"/>
+            <input type="text" name="popup_footer" id="popup_footer" placeholder="Popup Footer" class="form-control"/>
             </div>
         </div>
         <div class="modal-footer">

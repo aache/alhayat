@@ -126,7 +126,8 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
      function updatePopup(){
-      $.get("popup_controller.php",{ title: $("#popup_title").val(), content: $("#popup_content").val() , footer: $("#popup_footer").val()  }, function(data, status){
+       alert('Hi');
+      $.get("popup_controller.php",{ title: $("#title").val(), content: $("#content").val() , footer: $("#footer").val()  }, function(data, status){
          console.log("Data: " + data + "\nStatus: " + status);
          if(data=="SUCCESS"){
             location.reload();
