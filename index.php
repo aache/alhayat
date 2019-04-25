@@ -532,8 +532,9 @@ function off() {
 								<h3>Dr. MOHAMMED ASIF ANSARI</h3>
 								<span class="position mb-2">Laparoscopic,Anorectal and General Surgeon</span>
 								<div class="faded">
-									<p>M.S(GEN.SURGERY),FMAS,FIAGES
-									,FAIS,FICS(USA).</p>
+									<p>M.S(GEN.SURGERY);MBBS;
+									FICS(USA);FAIS;FMAS;FIAGES;
+									</p>
  <p>Associate professor and consultant surgeon GRANT MEDICAL COLLEGE,DEPT OF GEN.SURGERY.J.J HOSPITAL MUMBAI.
 </p>
 <h5>Time:   5.30pm-8pm (Monday-Saturday)</h5>
@@ -556,7 +557,7 @@ function off() {
 								<h3>Dr. NAILA ASIF ANSARI</h3>
 								<span class="position mb-2">Infertility specialist,Laparoscopic surgeon,Gynaecologist and Obstetrician </span>
 								<div class="faded">
-									<p>DGO,CPS,FCPS,DFP,FMAS,MBBS.</p>
+									<p>DGO;CPS;FCPS;DFP;FMAS;MBBS.</p>
 									<ul class="ftco-social text-center">
 		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
