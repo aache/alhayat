@@ -72,7 +72,6 @@ function off() {
 
 			<!--Start nav-->
 	<?php include "topbarlogo.php"; ?>
-	<?php include  "shayri.php";?>  
 	<?php include  "menubar.php";?>  
     <!-- END nav -->
     

@@ -72,7 +72,6 @@ function off() {
 
 			<!--Start nav-->
 	<?php include "topbarlogo.php"; ?>
-	<?php include  "shayri.php";?>  
 	<?php include  "menubar.php";?>  
     <!-- END nav -->
     
@@ -220,7 +219,7 @@ function off() {
 				<div class="row">
 					<div class="col-md-9">
 						<h2>We Provide Free Health Care Consultation</h2>
-						<!--p class="mb-0">Your Health is Our Top Priority with Comprehensive, Affordable medical.</p-->
+						<p class="mb-0">Your Health is Our Top Priority with Comprehensive, Affordable medical.</p>
 						<p></p>
 					</div>
 					<!--div class="col-md-3 d-flex align-items-center">

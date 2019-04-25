@@ -37,7 +37,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Videos</h1>
-            <a href="#"  data-toggle="modal" data-target="#addContactModal" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i>Add Videos</a>
+            <a href="#"  data-toggle="modal" data-target="#addContactModal" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i>Add Contact</a>
           </div>
 
           <!-- Content Row -->
@@ -68,19 +68,59 @@
           <div class="row">
 
             <!-- Content Column -->
-            <div class="col-lg-5 mb-4">
+            <div class="col-lg-6 mb-4">
 
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Contacts <!--button class="float-right btn btn-primary btn-sm" onclick="selectAll()">Select All</button--></h6>
+                  
+                </div>
                 <div class="card-body">
-                  <iframe width="435" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>  
+                 <div class="table-responsive">
+                   <table class="table table-bordered" id="dataTable">
+                   <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Contact</th>
+                      <th></th>
+
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>Name</th>
+                      <th>Contact</th>
+                      <th></th>
+                      
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <?php $result = mysqli_query($con,$sql_select_contact);
+                              if (mysqli_num_rows($result) > 0) {
+                                while($row = mysqli_fetch_assoc($result)){
+                     ?>
+                              <tr>
+                              <td><?php echo $row["contact_name"];?></td>
+                              <td><?php echo $row["contact_no"];?></td>
+                              <td><a onclick="toggleContact(<?php echo $row['contact_id']; ?>,'<?php echo $row['contact_no']; ?>')" id="check_num<?php echo $row["contact_id"];?>" class="btn-circle check-btn btn-sm btn-success text-center">
+                              <i id="check_num_icon<?php echo $row["contact_id"];?>" class="fa fa-check i-fa"></i>
+                              </a></td></tr>
+                              <?php  
+                                  }
+                                }
+                            ?>
+                            </tbody>
+                    </table>
+                 </div>
+                  
                 </div>
               </div>
         </div>
         <div class="col-lg-6 mb-4">
 
           <!-- Project Card Example -->
-          <!--div class="card shadow mb-4">
+          <div class="card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary" id="resp">SMS details</h6>
             </div>
@@ -92,7 +132,7 @@
                   <button class="btn btn-sm btn-primary" onClick="sendSMS()">Send</button>
               </div>
             </div>
-          </div-->
+          </div>
 
           </div>
 </div>
