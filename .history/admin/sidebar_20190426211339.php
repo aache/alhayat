@@ -59,12 +59,6 @@
     <span>Popup</span></a>
 </li>
 
-<li class="nav-item">
-  <a class="nav-link" href="queries.php">
-    <i class="fas fa-fw fa-chart-area"></i>
-    <span>Queries</span></a>
-</li>
-
 <!-- Divider -->
 <hr class="sidebar-divider d-none d-md-block">
 

@@ -34,7 +34,7 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="send_sms_test.php">
+  <a class="nav-link" href="send_sms.php">
     <i class="fas fa-fw fa-chart-area"></i>
     <span>Send SMS Test</span></a>
 </li>
@@ -57,12 +57,6 @@
   <a class="nav-link" href="popup_setting.php">
     <i class="fas fa-fw fa-chart-area"></i>
     <span>Popup</span></a>
-</li>
-
-<li class="nav-item">
-  <a class="nav-link" href="queries.php">
-    <i class="fas fa-fw fa-chart-area"></i>
-    <span>Queries</span></a>
 </li>
 
 <!-- Divider -->

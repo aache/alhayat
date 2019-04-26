@@ -60,7 +60,7 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="queries.php">
+  <a class="nav-link" href="popup_setting.php">
     <i class="fas fa-fw fa-chart-area"></i>
     <span>Queries</span></a>
 </li>
