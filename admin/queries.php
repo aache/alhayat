@@ -36,7 +36,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Send Message</h1>
+            <h1 class="h3 mb-0 text-gray-800">Queries</h1>
             <a href="#"  data-toggle="modal" data-target="#addContactModal" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i>Add Contact</a>
           </div>
 
@@ -52,15 +52,9 @@
           <div class="row">
 
             <!-- Area Chart -->
-            <?php 
-            //include 'area_chart.php'
-             ?>
             <!-- Area Chart End-->
 
             <!-- Pie Chart -->
-            <?php
-            // include 'pie_chart.php';
-             ?>
             <!-- Pie Chart End -->
           </div>
 
@@ -68,12 +62,12 @@
           <div class="row">
 
             <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-12 mb-4">
 
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Contacts </h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Queries </h6>
                 </div>
                 <div class="card-body">
                  <div class="table-responsive">
@@ -81,17 +75,17 @@
                    <thead>
                     <tr>
                       <th>Name</th>
-                      <th>Contact</th>
-                      <th></th>
-
+                      <th>Email</th>
+                      <th>Date</th>
+                      <th>Details</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                       <th>Name</th>
-                      <th>Contact</th>
-                      <th></th>
-                      
+                      <th>Email</th>
+                      <th>Date</th>
+                      <th>Details</th>
                     </tr>
                   </tfoot>
                   <tbody>
@@ -102,9 +96,9 @@
                               <tr>
                               <td><?php echo $row["contact_name"];?></td>
                               <td><?php echo $row["contact_no"];?></td>
-                              <td><a onclick="toggleContact(<?php echo $row['contact_id']; ?>,'<?php echo $row['contact_no']; ?>')" id="check_num<?php echo $row["contact_id"];?>" class="btn-circle check-btn btn-sm btn-success text-center">
-                              <i id="check_num_icon<?php echo $row["contact_id"];?>" class="fa fa-check i-fa"></i>
-                              </a></td></tr>
+                              <td><?php echo $row["contact_name"];?></td>
+                              <td><button class="btn btn-primary">Details</button></td>
+                              </tr>
                               <?php  
                                   }
                                 }
@@ -116,24 +110,8 @@
                 </div>
               </div>
         </div>
-        <div class="col-lg-6 mb-4">
-
-          <!-- Project Card Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary" id="resp">SMS details</h6>
-            </div>
-            <div class="card-body">
-              <h4 class="medium font-weight-bold">Message</h4>
-              <textarea id="message" style="height:200px;" class="form-control">
-              </textarea>
-              <div style="padding:10px;">
-                  <button class="btn btn-sm btn-primary" onClick="sendSMS()">Send</button>
-              </div>
-            </div>
-          </div>
-
-          </div>
+        <!--div class="col-lg-6 mb-4">
+        </div-->
 </div>
               <!-- Color System -->
               <?php 

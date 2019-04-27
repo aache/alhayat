@@ -68,12 +68,12 @@
           <div class="row">
 
             <!-- Content Column -->
-            <div class="col-lg-5 mb-4">
+            <div class="col-lg-6 mb-4">
 
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
                 <div class="card-body">
-                  <iframe width="435" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>  
+                  <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>  
                 </div>
               </div>
         </div>

@@ -95,7 +95,7 @@
                     </tr>
                   </tfoot>
                   <tbody>
-                    <?php $result = mysqli_query($con,$sql_select_contact);
+                    <?php $result = mysqli_query($con,$sql_test_select_contact);
                               if (mysqli_num_rows($result) > 0) {
                                 while($row = mysqli_fetch_assoc($result)){
                      ?>
@@ -193,7 +193,7 @@
       var numbers = [];
       $( document ).ready(function() {
       
-        $.get("all_contacts_controller.php", function(result){
+        $.get("all_test_contacts_controller.php", function(result){
             numbers = JSON.parse(result); 
         });
       });
@@ -232,9 +232,9 @@
       }
 
       function addContact(){
-        $.post("add_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
+        $.post("add_test_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
           console.log(result); 
-          location.reload();
+          //location.reload();
         });
       }
   </script>

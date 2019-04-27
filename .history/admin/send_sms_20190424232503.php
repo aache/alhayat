@@ -73,7 +73,7 @@
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Contacts </h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Contacts <!--button class="float-right btn btn-primary btn-sm" onclick="selectAll()">Select All</button--></h6>
                 </div>
                 <div class="card-body">
                  <div class="table-responsive">

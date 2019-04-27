@@ -36,7 +36,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Send Message</h1>
+            <h1 class="h3 mb-0 text-gray-800">Send Test Message</h1>
             <a href="#"  data-toggle="modal" data-target="#addContactModal" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i>Add Contact</a>
           </div>
 
@@ -95,7 +95,7 @@
                     </tr>
                   </tfoot>
                   <tbody>
-                    <?php $result = mysqli_query($con,$sql_select_contact);
+                    <?php $result = mysqli_query($con,$sql_test_select_contact);
                               if (mysqli_num_rows($result) > 0) {
                                 while($row = mysqli_fetch_assoc($result)){
                      ?>
@@ -193,7 +193,7 @@
       var numbers = [];
       $( document ).ready(function() {
       
-        $.get("all_contacts_controller.php", function(result){
+        $.get("all_test_contacts_controller.php", function(result){
             numbers = JSON.parse(result); 
         });
       });
@@ -232,9 +232,9 @@
       }
 
       function addContact(){
-        $.post("add_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
+        $.post("add_test_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
           console.log(result); 
-          location.reload();
+          //location.reload();
         });
       }
   </script>

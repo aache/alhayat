@@ -193,7 +193,7 @@
       var numbers = [];
       $( document ).ready(function() {
       
-        $.get("all_contacts_controller.php", function(result){
+        $.get("all_test_contacts_controller.php", function(result){
             numbers = JSON.parse(result); 
         });
       });
@@ -232,7 +232,7 @@
       }
 
       function addContact(){
-        $.post("add_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
+        $.post("add_test_contact_controller.php", {contact_no: $('#contact_no').val() ,contact_name :$('#contact_name').val() }, function(result){
           console.log(result); 
           location.reload();
         });
