@@ -1,0 +1,20 @@
+.a{
+    font-style: italic;
+    display:block;
+}
+
+
+/*For Contact Page */
+
+.b{
+    display:block;
+}
+
+/*For shayri*/
+
+.c{
+    background-color: rgb(11, 73, 245);
+    color:orange;
+    font-size: larger;
+    font-style: italic;
+}

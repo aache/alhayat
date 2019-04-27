@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/overlay.css">
+		<link rel="stylesheet" href="css/topbar.css">
 
   </head>
   <body>
@@ -536,7 +537,7 @@ function off() {
 									<p>M.S(GEN.SURGERY);MBBS;
 									FICS(USA);FAIS;FMAS;FIAGES;
 									</p>
- <p>Associate professor and consultant surgeon GRANT MEDICAL COLLEGE,DEPT OF GEN.SURGERY.J.J HOSPITAL MUMBAI.
+ <p>Associate Professor And Consultant Surgeon GRANT MEDICAL COLLEGE,DEPT OF GEN.SURGERY.J.J HOSPITAL MUMBAI.
 </p>
 <h5>Time:   5.30pm-8pm (Monday-Saturday)</h5>
 									<ul class="ftco-social text-center">

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topbar.css">
   </head>
   <body>
     <!--Start nav-->
@@ -82,9 +83,9 @@
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
           	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Address : </span> AL-HAYAT NURSING HOME.  1406,
+	            <p><span>Address : </span> <span class="b">AL-HAYAT NURSING HOME.</span>  1406,
               AYYUB DOODHWALA COMPLEX,A-WING,GROUND And FIRST FLOOR.
-              BESIDE ANAND CINEMA GAIBI NAGAR,BHIWANDI 421302.
+              BESIDE ANAND CINEMA GAIBI NAGAR,<span class="b">BHIWANDI 421302.</span>
               </p>
 	          </div>
           </div>
@@ -96,13 +97,13 @@
           </div>
           <div class="col-md-3 d-flex">
           	<div class="bg-light d-flex align-self-stretch box p-4">
-            <p><span>Email:</span> <a href="mailto:damasif4@gmail.com">damasif4@gmail.com</a>,
+            <p><span>Email : </span> <a href="mailto:damasif4@gmail.com">damasif4@gmail.com</a>,
               <a href="alhayatnursinghome2006@gmail.com">alhayatnursinghome2006@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="bg-light d-flex align-self-stretch box p-4">
-	            <p><span>Website</span> <a href="#">www.al-hayat.co.in</a></p>
+	            <p><span>Website : </span> <a href="#">www.al-hayat.co.in</a></p>
 	          </div>
           </div>
         </div>
