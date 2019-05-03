@@ -76,7 +76,7 @@
                     <tr>
                       <th>Name</th>
                       <th>Email</th>
-                      <th>Date</th>
+                      <th>Question</th>
                       <th>Details</th>
                     </tr>
                   </thead>
@@ -84,7 +84,7 @@
                     <tr>
                       <th>Name</th>
                       <th>Email</th>
-                      <th>Date</th>
+                      <th>Question</th>
                       <th>Details</th>
                     </tr>
                   </tfoot>

@@ -31,8 +31,8 @@
        ?>
 
       <?php include 'connection.php';
-		      $result_select_popup=mysqli_query($con,$sql_select_popup);
-		      $row_select_popup = mysqli_fetch_assoc($result_select_popup);
+		      $result_select_query_by_id=mysqli_query($con,$sql_select_query_by_id . $_GET["id"]);
+		      $row_select_query_by_id = mysqli_fetch_assoc($result_select_query_by_id);
 	    ?>
         <!-- End of Topbar -->
         
@@ -58,14 +58,14 @@
                   <h6 class="m-0 font-weight-bold text-primary">Query Content</h6>
                 </div>
                 <div class="card-body">
-                    <!--h6 style="font-weight : bold">Title</h6-->
-                    <!--div><?php //echo $row_select_popup['title'];?></div-->
+                    <h6 style="font-weight : bold"><?php echo $row_select_query_by_id['uname'];?></h6>
+                    <div><?php echo $row_select_query_by_id['email'];?></div>
                     <h6 style="margin-top:20px; font-weight : bold;">Content</h6>
-                    <div style="width:450px;word-wrap: break-word;"><?php echo $row_select_popup['content'];?></div>
+                    <div style="width:450px;word-wrap: break-word;"><?php echo $row_select_query_by_id['question'];?></div>
                     <h6 style="margin-top:20px; font-weight : bold;">Reply</h6>
                     <div><textarea class="form-control" id="replyBox" style="height:150px" ></textarea></div>
                     <button class="btn btn-primary">Back</button>
-                    <button class="btn btn-primary">Reply</button>
+                    <button class="btn btn-primary" onclick="replyToQuery(<?php echo $row_select_query_by_id['queries_id'];?>)">Reply</button>
                 </div>
               </div>
         </div>
@@ -100,8 +100,8 @@
   </a>
 
   <!-- Logout Modal-->
-  <?php include 'logout_modal.php' ;?>
-  <?php include 'add_popup.php' ;?>
+  <?php //include 'logout_modal.php' ;?>
+  <?php //include 'add_popup.php' ;?>
   <!-- Logout Modal End--> 
 
   <!-- Bootstrap core JavaScript-->
@@ -126,8 +126,10 @@
   <!--script src="js/demo/chart-area-demo.js"></script-->
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
-     function updatePopup(){
-      $.get("popup_controller.php",{ title: $("#popup_title").val(), content: $("#popup_content").val() , footer: $("#popup_footer").val()  }, function(data, status){
+     function replyToQuery(id){
+       console.log(id);
+      $.get("query_reply_controller.php",{ queries_id: id , content: $("#replyBox").val()},
+       function(data, status){
          console.log("Data: " + data + "\nStatus: " + status);
          if(data=="SUCCESS"){
             location.reload();

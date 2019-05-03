@@ -4,4 +4,5 @@
   $sql_select_all_contact = "select contact_no from contacts";
   $sql_select_popup = "select title , content , footer from popup";
   $sql_select_queries = "select queries_id , uname , email , question from queries";
+  $sql_select_query_by_id = "select * from queries where queries_id = ";
 ?>
