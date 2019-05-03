@@ -51,19 +51,19 @@
 					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
 						<form action="#">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
+                <input type="text" class="form-control" placeholder="Your Name" id="uname" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
+                <input type="text" class="form-control" placeholder="Your Email" id="email" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" class="form-control" placeholder="Subject" id="subject" required>
               </div>
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea cols="30" rows="7" class="form-control" placeholder="Message" id="message" required></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="button" id="sendMessage" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
 					</div>
@@ -74,7 +74,7 @@
 			</div>
 		</section>
 		
-		<section class="ftco-section contact-section">
+		<!--section class="ftco-section contact-section">
       <div class="container">
         <div class="row d-flex mb-5 contact-info">
           <div class="col-md-12 mb-4">
@@ -108,11 +108,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section-->
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
-        <?php include "footbar.php";?>
+        <?php //include "footbar.php";?>
         <?php include "footerbar.php";?>
       </div>
     </footer>
@@ -140,6 +140,14 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+    <script type="text/javascript">
+    $('#sendMessage').click(function(){
+      $.get("queries_controller.php",{name :$("#uname").val() , email :$("#email").val() , question : $("#subject").val()+" - "+$("#message").val() }, function(data, status){
+          console.log(data);
+          location.reload();
+      });
+    });
+
+    </script>
   </body>
 </html>

@@ -29,6 +29,11 @@
        <?php
          include 'topbar.php' ; 
        ?>
+
+      <?php include 'connection.php';
+		      $result_select_popup=mysqli_query($con,$sql_select_popup);
+		      $row_select_popup = mysqli_fetch_assoc($result_select_popup);
+	    ?>
         <!-- End of Topbar -->
         
         <!-- Begin Page Content -->
@@ -36,82 +41,35 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Queries</h1>
-            <a href="#"  data-toggle="modal" data-target="#addContactModal" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i>Add Contact</a>
+            <h1 class="h3 mb-0 text-gray-800">Reply to Query</h1>
           </div>
 
           <!-- Content Row -->
-          <!-- Dashboard Cards -->
-          <?php 
-          //include 'dashboard_cards.php' 
-          ?>
-          <!-- Dashboard Cards End -->
-
           <!-- Content Row -->
-
-          <div class="row">
-
-            <!-- Area Chart -->
-            <!-- Area Chart End-->
-
-            <!-- Pie Chart -->
-            <!-- Pie Chart End -->
-          </div>
-
           <!-- Content Row -->
           <div class="row">
 
             <!-- Content Column -->
-            <div class="col-lg-12 mb-4">
+            <div class="col-lg-7 mb-4">
 
               <!-- Project Card Example -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Queries </h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Query Content</h6>
                 </div>
                 <div class="card-body">
-                 <div class="table-responsive">
-                   <table class="table table-bordered" id="dataTable">
-                   <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Date</th>
-                      <th>Details</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Date</th>
-                      <th>Details</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <?php $result = mysqli_query($con,$sql_select_queries);
-                              if (mysqli_num_rows($result) > 0) {
-                                while($row = mysqli_fetch_assoc($result)){
-                     ?>
-                              <tr>
-                              <td><?php echo $row["uname"];?></td>
-                              <td><?php echo $row["email"];?></td>
-                              <td><?php echo $row["question"];?></td>
-                              <td><button class="btn btn-primary" onclick='replyToQuery(<?php echo $row["queries_id"];?>)'>Reply</button></td>
-                              </tr>
-                              <?php  
-                                  }
-                                }
-                            ?>
-                            </tbody>
-                    </table>
-                 </div>
-                  
+                    <!--h6 style="font-weight : bold">Title</h6-->
+                    <!--div><?php //echo $row_select_popup['title'];?></div-->
+                    <h6 style="margin-top:20px; font-weight : bold;">Content</h6>
+                    <div style="width:450px;word-wrap: break-word;"><?php echo $row_select_popup['content'];?></div>
+                    <h6 style="margin-top:20px; font-weight : bold;">Reply</h6>
+                    <div><textarea class="form-control" id="replyBox" style="height:150px" ></textarea></div>
+                    <button class="btn btn-primary">Back</button>
+                    <button class="btn btn-primary">Reply</button>
                 </div>
               </div>
         </div>
-        <!--div class="col-lg-6 mb-4">
-        </div-->
+       
 </div>
               <!-- Color System -->
               <?php 
@@ -143,7 +101,7 @@
 
   <!-- Logout Modal-->
   <?php include 'logout_modal.php' ;?>
-  <?php include 'add_contact.php' ;?>
+  <?php include 'add_popup.php' ;?>
   <!-- Logout Modal End--> 
 
   <!-- Bootstrap core JavaScript-->
@@ -168,8 +126,13 @@
   <!--script src="js/demo/chart-area-demo.js"></script-->
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
-     function replyToQuery(queries_id){
-        window.location = "/alhayat/admin/query_reply.php?id=" + queries_id ; 
+     function updatePopup(){
+      $.get("popup_controller.php",{ title: $("#popup_title").val(), content: $("#popup_content").val() , footer: $("#popup_footer").val()  }, function(data, status){
+         console.log("Data: " + data + "\nStatus: " + status);
+         if(data=="SUCCESS"){
+            location.reload();
+         }
+      });
      }
   </script>
 </body>
