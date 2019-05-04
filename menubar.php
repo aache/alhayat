@@ -10,9 +10,9 @@
 	        	<li class="nav-item"><a href="about.php" class="nav-link">About</a></li>
 	        	<li class="nav-item"><a href="videos.php" class="nav-link">Videos</a></li>
 	        	<li class="nav-item"><a href="gallery.php" class="nav-link">Gallery</a></li>
-	        	<li class="nav-item"><a href="achievement.php" class="nav-link">Achievement</a></li>
-	        	<li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
-						<li class="nav-item"><a href="blog.php" class="nav-link">Events</a></li>
+	        	<!--li class="nav-item"><a href="achievement.php" class="nav-link">Achievement</a></li-->
+	        	<!--li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li-->
+						<!--li class="nav-item"><a href="blog.php" class="nav-link">Events</a></li-->
 	          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>

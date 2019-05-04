@@ -131,7 +131,7 @@
       $.get("query_reply_controller.php",{ queries_id: id , content: $("#replyBox").val()},
        function(data, status){
          console.log("Data: " + data + "\nStatus: " + status);
-         if(data=="SUCCESS"){
+         if(status=="success"){
             location.reload();
          }
       });
