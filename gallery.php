@@ -25,12 +25,37 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/overlay.css">
   </head>
   <body>
 	<?php echo file_get_contents("topbarlogo.php"); ?>
 	<?php echo file_get_contents("menubar.php");?> 
     <!-- END nav -->
-    
+
+    <!-- Overlay-->
+	<div id="overlay" onclick="off()">
+ 
+ <div id="text">Al-Hayat</div>
+ <div class="coupon">
+ <?php include 'admin/connection.php';
+		$result_select_popup=mysqli_query($con,$sql_select_popup);
+		$row_select_popup = mysqli_fetch_assoc($result_select_popup);
+ ?>
+ <div class="container" style="background-color:white">
+ <img src="images\image_1.jpg" alt="Avatar" style="width:33%;">
+ <img src="images\image_2.jpg" alt="Avatar" style="width:33%;">
+ <img src="images\image_1.jpg" alt="Avatar" style="width:32%;">
+ </div>
+
+ </div>
+ <button class="close" onclick="off()">x</button>
+
+</div>
+<!--Overlay End-->
+
+
+
+
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
@@ -242,6 +267,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+	<script src="js/overlay.js"></script>
     
   </body>
 </html>
