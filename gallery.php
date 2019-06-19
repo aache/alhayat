@@ -78,7 +78,7 @@
 			 <img src="images/Dr.Naila.jpg" alt="DrNaila" width="600" height="400">		 
 		 </div>
 		 <div class="gallery">
- 			<img src="images/Dr.Naila3.jpg" alt="PRoom1" width="600" height="400"">
+ 			<img src="images/Dr.Naila3.jpg" alt="PRoom1" width="600" height="400">
 		 </div>
 		 <div class="gallery">	 
 			 <img src="images/Dr.jpg" alt="Dr"  width="600" height="400" >
@@ -87,7 +87,7 @@
 			<img src="images/Gward1.jpg" alt="Gward1"  width="600" height="400" >
 		</div>
 		<div class="gallery">
- 			<img src="images/PRoom1.jpg" alt="PRoom1" width="600" height="400"">
+ 			<img src="images/PRoom1.jpg" alt="PRoom1" width="600" height="400">
 		 </div>
 		 <div class="gallery">
 			 <img src="images/PRoom2.jpg" alt="PRoom2"  width="600" height="400">	
@@ -104,10 +104,10 @@
 			 <img src="images/Reception4.jpg" alt="Reception4"  width="600" height="400" >
 		 </div>
 		 <div class="gallery">
- 			<img src="images/Machine2.jpg" alt="Machine2" width="600" height="400"">
+ 			<img src="images/Machine2.jpg" alt="Machine2" width="600" height="400">
 		 </div>
 		<div class="gallery">
- 			<img src="images/OT2.jpg" alt="OT2" width="600" height="400"">
+ 			<img src="images/OT2.jpg" alt="OT2" width="600" height="400">
 		 </div>
 		 <div class="gallery">
 			 <img src="images/OT3.jpg" alt="OT3"  width="600" height="400">	
