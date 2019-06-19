@@ -78,7 +78,7 @@ function off() {
     <!-- END nav -->
     
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image:url(images/outdoor3.jpg);" data-stellar-background-ratio="0.5">
+      <div class="slider-item" style="background-image:url(images/outdoor3.jpg);" >
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
@@ -91,7 +91,7 @@ function off() {
         </div>
       </div>
 
-      <div class="slider-item" style="background-image:url(images/reception.jpg);" data-stellar-background-ratio="0.5">
+      <div class="slider-item" style="background-image:url(images/reception.jpg);">
 			<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
@@ -102,7 +102,7 @@ function off() {
           </div>
         </div>
         </div>
-      </div>
+      </div> 	
     </section>
 
     <section class="ftco-services ftco-no-pb">

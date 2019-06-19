@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/overlay.css">
+		<link rel="stylesheet" href="css/gallery.css">
   </head>
   <body>
 	<?php echo file_get_contents("topbarlogo.php"); ?>
@@ -67,7 +68,80 @@
         </div>
       </div>
     </section>
+	<section class="ftco-section">
+			<div class="container">
+			<div class="row">
+	<div class="gallery">
+			<img src="images/DrAsif.jpg" alt="DrAsif">
+		</div>
+		<div class="gallery">
+			 <img src="images/Dr.Naila.jpg" alt="DrNaila" width="600" height="400">		 
+		 </div>
+		 <div class="gallery">
+ 			<img src="images/Dr.Naila3.jpg" alt="PRoom1" width="600" height="400"">
+		 </div>
+		 <div class="gallery">	 
+			 <img src="images/Dr.jpg" alt="Dr"  width="600" height="400" >
+		 </div>
+		 <div class="gallery">
+			<img src="images/Gward1.jpg" alt="Gward1"  width="600" height="400" >
+		</div>
+		<div class="gallery">
+ 			<img src="images/PRoom1.jpg" alt="PRoom1" width="600" height="400"">
+		 </div>
+		 <div class="gallery">
+			 <img src="images/PRoom2.jpg" alt="PRoom2"  width="600" height="400">	
+		</div>
 		
+
+		<div class="gallery">
+			<img src="images/reception3.jpg" alt="reception3"  width="600" height="400">
+		</div>
+		<div class="gallery">
+			 <img src="images/reception.jpg" alt="reception" width="600" height="400">		 
+		 </div>
+		 <div class="gallery">	 
+			 <img src="images/Reception4.jpg" alt="Reception4"  width="600" height="400" >
+		 </div>
+		 <div class="gallery">
+ 			<img src="images/Machine2.jpg" alt="Machine2" width="600" height="400"">
+		 </div>
+		<div class="gallery">
+ 			<img src="images/OT2.jpg" alt="OT2" width="600" height="400"">
+		 </div>
+		 <div class="gallery">
+			 <img src="images/OT3.jpg" alt="OT3"  width="600" height="400">	
+		</div>
+		<div class="gallery">
+			<img src="images/OT1.jpg" alt="OT1"  width="600" height="400" >
+		</div>
+		<div class="gallery">
+			<img src="images/Machine1.jpg" alt="Machine1"  width="600" height="400" >
+		</div>
+		
+		 <div class="gallery">
+			 <img src="images/Machine3.jpg" alt="Machine3"  width="600" height="400">	
+		</div>
+		<div class="gallery">
+			<img src="images/Machine4.jpg" alt="Machine4"  width="600" height="400" >
+		</div>
+		<div class="gallery">
+			 <img src="images/Gward2.jpg" alt="Gward2"  width="600" height="400">	
+		</div>
+		 <div class="gallery">
+			 <img src="images/medical.jpg" alt="Medical"  width="600" height="400">	
+		</div>
+		<div class="gallery">
+			 <img src="images/Water.jpg" alt="Water Purifier"  width="600" height="400">	
+		</div>
+		
+		
+
+</div>
+		</div>
+		</section>
+		
+
 		<section class="ftco-section">
 			<div class="container">
 				<div class="row">
