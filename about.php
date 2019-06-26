@@ -52,52 +52,34 @@
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
 	          	<div class="pl-md-5 ml-md-5">
-		          	<span class="subheading">About Dr.care</span>
-		            <h2 class="mb-4" style="font-size: 28px;">Medical specialty concerned with the care of acutely ill hospitalized patients</h2>
+		          	<span class="subheading">About Al-Hayat</span>
+		            <h2 class="mb-4" style="font-size: 28px;">AL-HAYAT NURSING HOME founded by DR.MOHAMMED ASIF ANWAR ALI ANSARI in 
+                        2006 with the intention of providing quality care at Affordable Cost.</h2>
 	            </div>
 	          </div>
+			  <div class="heading-section mb-5">
 	          <div class="pl-md-5 ml-md-5 mb-5">
-							<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
-							<div class="row mt-5 pt-2">
-								<div class="col-lg-6">
-									<div class="services-2 d-flex">
-										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-first-aid-kit"></span></div>
-										<div class="text">
-											<h3>Primary Care</h3>
-											<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="services-2 d-flex">
-										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-dropper"></span></div>
-										<div class="text">
-											<h3>Lab Test</h3>
-											<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="services-2 d-flex">
-										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-experiment-results"></span></div>
-										<div class="text">
-											<h3>Symptom Check</h3>
-											<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="services-2 d-flex">
-										<div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span class="flaticon-heart-rate"></span></div>
-										<div class="text">
-											<h3>Heart Rate</h3>
-											<p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-										</div>
-									</div>
-								</div>
-							</div>
+							<span class="subheading">Why To Choose Al-Hayat Nursing Home</span>
+							<ul>
+								<li>Qualified,Experienced and Expert Doctor Team.</li>
+								<li>DR.MOHAMMED ASIF ANSARI is Consulting Advanced Laparoscopic and Anorectal Surgeon</li>
+								<li>DR.NAILA ASIF ANSARI is Consulting Gynaecologist and Obstetrician.Infertility Specialist and Laparoscopic Surgeon.</li>
+								<li>DR.KHALID ANSARI is Consulting Physician and Intensivist.Expert in Clinical Care Management.</li>
+								<li>Treatment For Planned and Emergency Cases.</li>
+								<li>Highly Maintained Neet and Clean Premise.</li>
+								<li>Qualified and Experienced Supporting Staff Team,Ready to Help Patient in Need Any Time.</li>
+								<li>Easy to Reach and Easy to Communicate.</li>
+								<li>Cost Effective Standard and Advance Treatment Facility.</li>
+								<li>Fully Equipped Modern Operating Room with KARL STORZ LAPAROSCOPIC TROLLEY and KARL STORZ Hand Instrument.</li>
+								<li>Fully Equipped Modern Labour Room with Trained Female Staff Members.</li>
+								<li>DAY CARE SURGERY.</li>
+								<li>MEDICLAIM and INSURANCE Facililty Available.</li>
+								<li>Sound Proof GENSET 15KV  enough to provide Electricity to the Nursing Home.</li>
+								<li>In House MEDICAL STORE and BLOOD COLLECTION CENTER for the Ease Of Treatment Process.</li>
+							</ul>
 						</div>
 					</div>
+				</div>
 				</div>
 			</div>
 		</section>

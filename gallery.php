@@ -27,14 +27,14 @@
     <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/overlay.css">
 		<link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/overlay.css">
+		
+
   </head>
   <body>
 	<?php echo file_get_contents("topbarlogo.php"); ?>
 	<?php echo file_get_contents("menubar.php");?> 
     <!-- END nav -->
-
-
-
 
 
 
@@ -51,74 +51,98 @@
     </section>
 <section class="ftco-section">
 	<div class="container">
+  <div id="overlay" onclick="off()">
+<img id="expandedImg" style="width:100%" >
+<button class="close" onclick="off()">x</button>
+</div>
+
+	 
 	<div class="row">
+
 		<div class="gallery">
-			<img src="images/DrAsif.jpg" alt="DrAsif">
+			<img src="images/DrAsif.jpg" onclick="myFunction(this);" alt="DrAsif">
 		</div>
 		<div class="gallery">
-			 <img src="images/Dr.Naila.jpg" alt="DrNaila" width="600" height="400">		 
+			 <img src="images/Dr.Naila.jpg" onclick="myFunction(this);" alt="DrNaila" >		 
 		 </div>
 		 <div class="gallery">
- 			<img src="images/Dr.Naila3.jpg" alt="PRoom1" width="600" height="400">
+ 			<img src="images/Dr.Naila3.jpg" onclick="myFunction(this);" alt="PRoom1" >
 		 </div>
 		 <div class="gallery">	 
-			 <img src="images/Dr.jpg" alt="Dr"  width="600" height="400" >
+			 <img src="images/Dr.jpg" onclick="myFunction(this);" alt="Dr" >
 		 </div>
 		 <div class="gallery">
-			<img src="images/Gward1.jpg" alt="Gward1"  width="600" height="400" >
+			<img src="images/Gward1.jpg" onclick="myFunction(this);" alt="Gward1" >
 		</div>
 		<div class="gallery">
- 			<img src="images/PRoom1.jpg" alt="PRoom1" width="600" height="400">
+ 			<img src="images/PRoom1.jpg" onclick="myFunction(this);" alt="PRoom1">
 		 </div>
 		 <div class="gallery">
-			 <img src="images/PRoom2.jpg" alt="PRoom2"  width="600" height="400">	
+			 <img src="images/PRoom2.jpg" onclick="myFunction(this);" alt="PRoom2" >	
 		</div>
 		
 
 		<div class="gallery">
-			<img src="images/reception3.jpg" alt="reception3"  width="600" height="400">
+			<img src="images/reception3.jpg" onclick="myFunction(this);" alt="reception3" >
 		</div>
 		<div class="gallery">
-			 <img src="images/reception.jpg" alt="reception" width="600" height="400">		 
+			 <img src="images/reception.jpg" onclick="myFunction(this);" alt="reception" >		 
 		 </div>
 		 <div class="gallery">	 
-			 <img src="images/Reception4.jpg" alt="Reception4"  width="600" height="400" >
+			 <img src="images/Reception4.jpg" onclick="myFunction(this);" alt="Reception4"  >
 		 </div>
 		 <div class="gallery">
- 			<img src="images/Machine2.jpg" alt="Machine2" width="600" height="400">
+ 			<img src="images/Machine2.jpg" onclick="myFunction(this);" alt="Machine2">
 		 </div>
 		<div class="gallery">
- 			<img src="images/OT2.jpg" alt="OT2" width="600" height="400">
+ 			<img src="images/OT2.jpg" onclick="myFunction(this);" alt="OT2" >
 		 </div>
 		 <div class="gallery">
-			 <img src="images/OT3.jpg" alt="OT3"  width="600" height="400">	
+			 <img src="images/OT3.jpg" onclick="myFunction(this);" alt="OT3"  >	
 		</div>
 		<div class="gallery">
-			<img src="images/OT1.jpg" alt="OT1"  width="600" height="400" >
+			<img src="images/OT1.jpg" onclick="myFunction(this);" alt="OT1"  >
 		</div>
 		<div class="gallery">
-			<img src="images/Machine1.jpg" alt="Machine1"  width="600" height="400" >
+			<img src="images/Machine1.jpg" onclick="myFunction(this);" alt="Machine1" >
 		</div>
 		
 		 <div class="gallery">
-			 <img src="images/Machine3.jpg" alt="Machine3"  width="600" height="400">	
+			 <img src="images/Machine3.jpg" onclick="myFunction(this);" alt="Machine3">	
 		</div>
 		<div class="gallery">
-			<img src="images/Machine4.jpg" alt="Machine4"  width="600" height="400" >
+			<img src="images/Machine4.jpg" onclick="myFunction(this);" alt="Machine4"  >
 		</div>
 		<div class="gallery">
-			 <img src="images/Gward2.jpg" alt="Gward2"  width="600" height="400">	
+			 <img src="images/Gward2.jpg" onclick="myFunction(this);" alt="Gward2">	
 		</div>
 		 <div class="gallery">
-			 <img src="images/medical.jpg" alt="Medical"  width="600" height="400">	
+			 <img src="images/medical.jpg" onclick="myFunction(this);" alt="Medical" >	
 		</div>
 		<div class="gallery">
-			 <img src="images/Water.jpg" alt="Water Purifier"  width="600" height="400">	
+			 <img src="images/Water.jpg" onclick="myFunction(this);" alt="Water Purifier" >	
 		</div>
-				
 
+						
+<script>
+function on(imgs) {
+  document.getElementById("overlay").style.display = "block";
+  
+}
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+}
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+   
 	</div>
 	</div>
+  
+
 </section>
 		
 
