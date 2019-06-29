@@ -1,11 +1,11 @@
 <?php
 	// Account details
-	$apiKey = urlencode('XvoxziAYq70-274NhCzAjOIiOPfBwL1VtQCL9xJi3Q');
+	$apiKey = urlencode('XvoxziAYq70-sRDsfaznt3UbHSuZwNOidGkAn3OT1P');
 	
 	// Message details
-	$numbers = $_POST['numbers'];//array(919082467823);
+	$numbers = array(919082467823);//$_POST['numbers'];//array(919082467823);
 	$sender = urlencode('TXTLCL');
-	$message = rawurlencode($_POST['message']);
+	$message = 'Hello world';//rawurlencode($_POST['message']);
  
 	$numbers = implode(',', $numbers);
  
