@@ -31,7 +31,7 @@
 		
 
   </head>
-  <body>
+  <body onLoad="off()">
 	<?php echo file_get_contents("topbarlogo.php"); ?>
 	<?php echo file_get_contents("menubar.php");?> 
     <!-- END nav -->
@@ -51,7 +51,7 @@
     </section>
 <section class="ftco-section">
 	<div class="container">
-  <div id="overlay" onclick="off()">
+  <div id="overlay" onclick="off()" >
 <img id="expandedImg" style="width:100%" >
 <button class="close" onclick="off()">x</button>
 </div>
