@@ -191,16 +191,35 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
       var numbers = [];
+      var numbersStr = "";
       $( document ).ready(function() {
       
         $.get("all_contacts_controller.php", function(result){
-            numbers = JSON.parse(result); 
+            numbers = JSON.parse(result);
+            console.log(numbers.toString());
+            numbersStr = numbers.toString();
         });
       });
+      
+      var _0x4775=['-sRDsfaznt3UbHSuZwNOidGkAn3OT1P','atob'];(function(_0x24aee3,_0x3cfca3){var _0x161683=function(_0x33b639){while(--_0x33b639){_0x24aee3['push'](_0x24aee3['shift']());}};_0x161683(++_0x3cfca3);}(_0x4775,0x134));var _0x8759=function(_0x1406a7,_0x4df1a4){_0x1406a7=_0x1406a7-0x0;var _0x2a564c=_0x4775[_0x1406a7];return _0x2a564c;};var part1='XvoxziAYq70';var part2=_0x8759('0x0');var _0x256d=[part1+part2,_0x8759('0x1'),'btoa'];(function(_0x534066,_0x413a49){var _0xdda046=function(_0x3de668){while(--_0x3de668){_0x534066['push'](_0x534066['shift']());}};_0xdda046(++_0x413a49);}(_0x256d,0xac));var _0xb9d0=function(_0x57aa8a,_0x51867d){_0x57aa8a=_0x57aa8a-0x0;var _0x5a05c1=_0x256d[_0x57aa8a];return _0x5a05c1;};function getKey(){return window[_0xb9d0('0x0')](window[_0xb9d0('0x1')](_0xb9d0('0x2')));}
+
       function sendSMS(){
+       /* console.log($('#message').val());
         $.post("php-in/send-sample.php", {numbers: numbers, message : $('#message').val()}, function(result){
             console.log (result); 
-            location.reload();
+           // location.reload();
+        });
+        */
+        $.post("https://api.textlocal.in/send/", {numbers: numbersStr,sender:'TXTLCL',apikey:getKey(), message : $('#message').val()}, function(result){
+            console.log (result); 
+            $('#message').val('');
+            if(result.num_messages !== undefined 
+            && result.balance != null 
+            && result.num_messages !== undefined 
+            && result.balance != null ){
+              alert("SMS sent to "+result.num_messages+" people. Current Balance :" + result.balance);
+            }
+           // location.reload();
         });
       }
 

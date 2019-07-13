@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Dr.care - Free Bootstrap 4 Template by Colorlib</title>
+    <?php include 'title.php'; ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -26,33 +26,15 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/overlay.css">
+		<link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/overlay.css">
+		
+
   </head>
-  <body>
+  <body onLoad="off()">
 	<?php echo file_get_contents("topbarlogo.php"); ?>
 	<?php echo file_get_contents("menubar.php");?> 
     <!-- END nav -->
-
-    <!-- Overlay-->
-	<div id="overlay" onclick="off()">
- 
- <div id="text">Al-Hayat</div>
- <div class="coupon">
- <?php include 'admin/connection.php';
-		$result_select_popup=mysqli_query($con,$sql_select_popup);
-		$row_select_popup = mysqli_fetch_assoc($result_select_popup);
- ?>
- <div class="container" style="background-color:white">
- <img src="images\image_1.jpg" alt="Avatar" style="width:33%;">
- <img src="images\image_2.jpg" alt="Avatar" style="width:33%;">
- <img src="images\image_1.jpg" alt="Avatar" style="width:32%;">
- </div>
-
- </div>
- <button class="close" onclick="off()">x</button>
-
-</div>
-<!--Overlay End-->
-
 
 
 
@@ -67,175 +49,104 @@
         </div>
       </div>
     </section>
+<section class="ftco-section">
+	<div class="container">
+  <div id="overlay" onclick="off()" >
+<img id="expandedImg" style="width:100%" >
+<button class="close" onclick="off()">x</button>
+</div>
+
+	 
+	<div class="row">
+
+		<div class="gallery">
+			<img src="images/DrAsif.jpg" onclick="myFunction(this);" alt="DrAsif">
+		</div>
+		<div class="gallery">
+			 <img src="images/Dr.Naila.jpg" onclick="myFunction(this);" alt="DrNaila" >		 
+		 </div>
+		 <div class="gallery">
+ 			<img src="images/Dr.Naila3.jpg" onclick="myFunction(this);" alt="PRoom1" >
+		 </div>
+		 <div class="gallery">	 
+			 <img src="images/Dr.jpg" onclick="myFunction(this);" alt="Dr" >
+		 </div>
+		 <div class="gallery">
+			<img src="images/Gward1.jpg" onclick="myFunction(this);" alt="Gward1" >
+		</div>
+		<div class="gallery">
+ 			<img src="images/PRoom1.jpg" onclick="myFunction(this);" alt="PRoom1">
+		 </div>
+		 <div class="gallery">
+			 <img src="images/PRoom2.jpg" onclick="myFunction(this);" alt="PRoom2" >	
+		</div>
 		
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-1.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Lloyd Wilson</h3>
-								<span class="position mb-2">Neurologist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-2.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Rachel Parker</h3>
-								<span class="position mb-2">Ophthalmologist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-3.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Ian Smith</h3>
-								<span class="position mb-2">Dentist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-4.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Alicia Henderson</h3>
-								<span class="position mb-2">Pediatrician</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
 
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-5.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Lloyd Wilson</h3>
-								<span class="position mb-2">Neurologist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-6.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Rachel Parker</h3>
-								<span class="position mb-2">Ophthalmologist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-7.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Ian Smith</h3>
-								<span class="position mb-2">Dentist</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/doc-8.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dr. Alicia Henderson</h3>
-								<span class="position mb-2">Pediatrician</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-				</div>
+		<div class="gallery">
+			<img src="images/reception3.jpg" onclick="myFunction(this);" alt="reception3" >
+		</div>
+		<div class="gallery">
+			 <img src="images/reception.jpg" onclick="myFunction(this);" alt="reception" >		 
+		 </div>
+		 <div class="gallery">	 
+			 <img src="images/Reception4.jpg" onclick="myFunction(this);" alt="Reception4"  >
+		 </div>
+		 <div class="gallery">
+ 			<img src="images/Machine2.jpg" onclick="myFunction(this);" alt="Machine2">
+		 </div>
+		<div class="gallery">
+ 			<img src="images/OT2.jpg" onclick="myFunction(this);" alt="OT2" >
+		 </div>
+		 <div class="gallery">
+			 <img src="images/OT3.jpg" onclick="myFunction(this);" alt="OT3"  >	
+		</div>
+		<div class="gallery">
+			<img src="images/OT1.jpg" onclick="myFunction(this);" alt="OT1"  >
+		</div>
+		<div class="gallery">
+			<img src="images/Machine1.jpg" onclick="myFunction(this);" alt="Machine1" >
+		</div>
+		
+		 <div class="gallery">
+			 <img src="images/Machine3.jpg" onclick="myFunction(this);" alt="Machine3">	
+		</div>
+		<div class="gallery">
+			<img src="images/Machine4.jpg" onclick="myFunction(this);" alt="Machine4"  >
+		</div>
+		<div class="gallery">
+			 <img src="images/Gward2.jpg" onclick="myFunction(this);" alt="Gward2">	
+		</div>
+		 <div class="gallery">
+			 <img src="images/medical.jpg" onclick="myFunction(this);" alt="Medical" >	
+		</div>
+		<div class="gallery">
+			 <img src="images/Water.jpg" onclick="myFunction(this);" alt="Water Purifier" >	
+		</div>
 
-			</div>
-		</section>
+						
+<script>
+function on(imgs) {
+  document.getElementById("overlay").style.display = "block";
+  
+}
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+  expandImg.parentElement.style.display = "block";
+}
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+   
+	</div>
+	</div>
+  
+
+</section>
+		
+
+		
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">

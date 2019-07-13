@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Dr.care - Free Bootstrap 4 Template by Colorlib</title>
+  <?php include 'title.php'; ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -68,7 +68,7 @@
             </form>
 					</div>
 					<div class="col-md-6 d-flex align-items-stretch">
-						<div id="map"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30126.468856381616!2d73.03945117686825!3d19.29068761575259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d05b714b2d2ed73!2sAL+HAYAT+NURSING+HOME+(Bhiwandi)!5e0!3m2!1sen!2sin!4v1561376972930!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
-        <?php //include "footbar.php";?>
+        <?php include "footbar.php";?>
         <?php include "footerbar.php";?>
       </div>
     </footer>
