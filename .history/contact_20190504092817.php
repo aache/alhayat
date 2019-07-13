@@ -142,12 +142,10 @@
   <script src="js/main.js"></script>
     <script type="text/javascript">
     $('#sendMessage').click(function(){
-      if($("#uname").val()!='' && $("#email").val() != '' && $("#message").val()!=''){
       $.get("queries_controller.php",{name :$("#uname").val() , email :$("#email").val() , question : $("#subject").val()+" - "+$("#message").val() }, function(data, status){
           console.log(data);
           location.reload();
       });
-      }
     });
 
     </script>
