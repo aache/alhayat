@@ -60,61 +60,61 @@
 	<div class="row">
 
 		<div class="gallery">
-			<img src="images/jpg/DrAsif.jpg" onclick="myFunction(this);" alt="DrAsif">
+			<img src="images/jpg/DrAsif.jpg" onclick="myFunction(this);" alt="Dr Asif">
 		</div>
 		<div class="gallery">
-			 <img src="images/jpg/Dr.Naila.jpg" onclick="myFunction(this);" alt="DrNaila" >		 
+			 <img src="images/jpg/Dr.Naila.jpg" onclick="myFunction(this);" alt="Dr Naila" >		 
 		 </div>
 		 <div class="gallery">
- 			<img src="images/jpg/Dr.Naila3.jpg" onclick="myFunction(this);" alt="PRoom1" >
+ 			<img src="images/jpg/Dr.Naila3.jpg" onclick="myFunction(this);" alt="Dr Naila image 2" >
 		 </div>
 		 <div class="gallery">	 
-			 <img src="images/jpg/Dr.jpg" onclick="myFunction(this);" alt="Dr" >
+			 <img src="images/jpg/Dr.jpg" onclick="myFunction(this);" alt="Dr Asif & Dr Naila" >
 		 </div>
 		 <div class="gallery">
-			<img src="images/jpg/Gward1.jpg" onclick="myFunction(this);" alt="Gward1" >
+			<img src="images/jpg/Gward1.jpg" onclick="myFunction(this);" alt="General Ward 1" >
 		</div>
 		<div class="gallery">
- 			<img src="images/jpg/PRoom1.jpg" onclick="myFunction(this);" alt="PRoom1">
+ 			<img src="images/jpg/PRoom1.jpg" onclick="myFunction(this);" alt="Private Room 1">
 		 </div>
 		 <div class="gallery">
-			 <img src="images/jpg/PRoom2.jpg" onclick="myFunction(this);" alt="PRoom2" >	
+			 <img src="images/jpg/PRoom2.jpg" onclick="myFunction(this);" alt="Private Room 2" >	
 		</div>
 		
 
 		<div class="gallery">
-			<img src="images/jpg/reception3.jpg" onclick="myFunction(this);" alt="reception3" >
+			<img src="images/jpg/reception3.jpg" onclick="myFunction(this);" alt="Reception 1" >
 		</div>
 		<div class="gallery">
-			 <img src="images/jpg/reception.jpg" onclick="myFunction(this);" alt="reception" >		 
+			 <img src="images/jpg/reception.jpg" onclick="myFunction(this);" alt="Reception 2" >		 
 		 </div>
 		 <div class="gallery">	 
-			 <img src="images/jpg/Reception4.jpg" onclick="myFunction(this);" alt="Reception4"  >
+			 <img src="images/jpg/Reception4.jpg" onclick="myFunction(this);" alt="Reception 3"  >
 		 </div>
 		 <div class="gallery">
- 			<img src="images/jpg/Machine2.jpg" onclick="myFunction(this);" alt="Machine2">
+ 			<img src="images/jpg/Machine2.jpg" onclick="myFunction(this);" alt="Machine 1">
 		 </div>
 		<div class="gallery">
- 			<img src="images/jpg/OT2.jpg" onclick="myFunction(this);" alt="OT2" >
+ 			<img src="images/jpg/OT2.jpg" onclick="myFunction(this);" alt="OT 1" >
 		 </div>
 		 <div class="gallery">
-			 <img src="images/jpg/OT3.jpg" onclick="myFunction(this);" alt="OT3"  >	
+			 <img src="images/jpg/OT3.jpg" onclick="myFunction(this);" alt="OT 2"  >	
 		</div>
 		<div class="gallery">
-			<img src="images/jpg/OT1.jpg" onclick="myFunction(this);" alt="OT1"  >
+			<img src="images/jpg/OT1.jpg" onclick="myFunction(this);" alt="OT 3"  >
 		</div>
 		<div class="gallery">
-			<img src="images/jpg/Machine1.jpg" onclick="myFunction(this);" alt="Machine1" >
+			<img src="images/jpg/Machine1.jpg" onclick="myFunction(this);" alt="Machine 2" >
 		</div>
 		
 		 <div class="gallery">
-			 <img src="images/jpg/Machine3.jpg" onclick="myFunction(this);" alt="Machine3">	
+			 <img src="images/jpg/Machine3.jpg" onclick="myFunction(this);" alt="Machine 3">	
 		</div>
 		<div class="gallery">
-			<img src="images/jpg/Machine4.jpg" onclick="myFunction(this);" alt="Machine4"  >
+			<img src="images/jpg/Machine4.jpg" onclick="myFunction(this);" alt="Machine 4"  >
 		</div>
 		<div class="gallery">
-			 <img src="images/jpg/Gward2.jpg" onclick="myFunction(this);" alt="Gward2">	
+			 <img src="images/jpg/Gward2.jpg" onclick="myFunction(this);" alt="General ward 2">	
 		</div>
 		 <div class="gallery">
 			 <img src="images/jpg/medical.jpg" onclick="myFunction(this);" alt="Medical" >	
