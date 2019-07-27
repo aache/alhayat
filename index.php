@@ -78,9 +78,9 @@ function off() {
     <!-- END nav -->
     
     <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image:url(images/outdoor3.jpg);" >   	
+      <div class="slider-item" style="background-image:url(images/jpg/outdoor3.jpg);" >   	
       </div>
-      <div class="slider-item" style="background-image:url(images/reception.jpg);">		
+      <div class="slider-item" style="background-image:url(images/jpg/reception.jpg);">		
       </div> 	
     </section>
 
