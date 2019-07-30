@@ -134,7 +134,7 @@ function off() {
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/DrAsif.jpg);">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/jpg/DrAsif.jpg);">
 					</div>
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
@@ -172,7 +172,7 @@ function off() {
 			</div>
 		</section>
 		
-		<section class="ftco-intro" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<section class="ftco-intro" style="background-image: url(images/jpg/bg_3.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				
@@ -199,7 +199,7 @@ function off() {
 					<div class="col-md-6 col-lg-4 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/DrAsif.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url(images/jpg/DrAsif.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Dr. MOHAMMED ASIF ANSARI</h3>
@@ -224,7 +224,7 @@ function off() {
 					<div class="col-md-6 col-lg-4 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/Dr.Naila.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url(images/jpg/Dr.Naila.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Dr. NAILA ASIF ANSARI</h3>
@@ -245,7 +245,7 @@ function off() {
 					<div class="col-md-6 col-lg-4 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/DrAsif.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url(images/jpg/DrKhalid.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Dr. KHALID ANSARI</h3>

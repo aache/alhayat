@@ -38,7 +38,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
             <h1 class="mb-2 bread">About Us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/Dr.jpg);">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/jpg/Dr.jpg);">
 					</div>
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">

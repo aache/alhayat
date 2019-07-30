@@ -11,7 +11,7 @@
 	                <li><span class="icon icon-map-marker"></span><span class="text">1406, AYYUB DOODHWALA COMPLEX,A-WING,GROUND And FIRST FLOOR.
               BESIDE ANAND CINEMA GAIBI NAGAR, BHIWANDI-421302</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">02522-251658 , 02522-226223</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">alhayatnursinghome2006@gmail.com , damasif4@gmail.com</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">damasif4@gmail.com</span></a></li>
 	              </ul>
 	            </div>
 
