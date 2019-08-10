@@ -12,7 +12,7 @@ if (mysqli_query($con, $sql)) {
     echo $sql;
 }
 $to_email_address = 'hamduleaaqib@gmail.com,damasif4@gmail.com' ;
-$content = 'Name : '.$name .'<br/> Email : '.$email . '<br/> Question :' . $question ;  
+$content = 'Name : '.$name .'<br/> Phone No : '.$email . '<br/> Question :' . $question ;  
 //mail($to_email_address,'Queries',$content , $headers);
 
 ?>

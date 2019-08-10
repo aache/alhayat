@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Dr.care - Free Bootstrap 4 Template by Colorlib</title>
+  <?php include 'title.php'; ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -39,7 +39,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
             <h1 class="mb-2 bread">Contact Us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@
                 <input type="text" class="form-control" placeholder="Your Name" id="uname" required>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email" id="email" required>
+                <input type="text" class="form-control" placeholder="Your Phone No" id="email" required>
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Subject" id="subject" required>
@@ -68,7 +68,7 @@
             </form>
 					</div>
 					<div class="col-md-6 d-flex align-items-stretch">
-						<div id="map"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30126.468856381616!2d73.03945117686825!3d19.29068761575259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5d05b714b2d2ed73!2sAL+HAYAT+NURSING+HOME+(Bhiwandi)!5e0!3m2!1sen!2sin!4v1561376972930!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
-        <?php //include "footbar.php";?>
+        <?php include "footbar.php";?>
         <?php include "footerbar.php";?>
       </div>
     </footer>
@@ -142,10 +142,12 @@
   <script src="js/main.js"></script>
     <script type="text/javascript">
     $('#sendMessage').click(function(){
+      if($("#uname").val()!='' && $("#email").val() != '' && $("#message").val()!=''){
       $.get("queries_controller.php",{name :$("#uname").val() , email :$("#email").val() , question : $("#subject").val()+" - "+$("#message").val() }, function(data, status){
           console.log(data);
           location.reload();
       });
+      }
     });
 
     </script>
