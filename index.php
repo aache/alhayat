@@ -134,14 +134,14 @@ function off() {
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/DrAsif.jpg);">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/jpg/DrAsif.jpg);">
 					</div>
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
 	          	<div class="pl-md-5 ml-md-5">
 		          	<span class="subheading">About Al-Hayat</span>
-		            <h2 class="mb-4" style="font-size: 28px;">AL-HAYAT NURSING HOME founded by DR.MOHAMMED ASIF ANWAR ALI ANSARI in 
-                        2006 with the intention of providing quality care at Affordable Cost.</h2>
+					  <h2 class="mb-4" style="font-size: 28px;">AL-HAYAT NURSING HOME <span style="font-size: 24px;">founded by </span>DR.MOHAMMED ASIF ANWAR ALI ANSARI 
+                <span style="font-size: 24px;">in 2006 with the intention of providing quality care at Affordable Cost.</span></h2>
 	            </div>
 	          </div>
 			  <div class="heading-section mb-5">
@@ -150,8 +150,8 @@ function off() {
 							<ul>
 								<li>Qualified,Experienced and Expert Doctor Team.</li>
 								<li>DR.MOHAMMED ASIF ANSARI is Consulting Advanced Laparoscopic and Anorectal Surgeon</li>
-								<li>DR.NAILA ASIF ANSARI is Consulting Gynaecologist and Obstetrician.Infertility Specialist and Laparoscopic Surgeon.</li>
-								<li>DR.KHALID ANSARI is Consulting Physician and Intensivist.Expert in Clinical Care Management.</li>
+								<li>DR.NAILA ASIF ANSARI is Consulting Gynaecologist and Obstetrician. Infertility Specialist and Laparoscopic Surgeon.</li>
+								<li>DR.KHALID ANSARI is Consulting Physician and Intensivist. Expert in Critical Care Management.</li>
 								<li>Treatment For Planned and Emergency Cases.</li>
 								<li>Highly Maintained Neet and Clean Premise.</li>
 								<li>Qualified and Experienced Supporting Staff Team,Ready to Help Patient in Need Any Time.</li>
@@ -163,6 +163,7 @@ function off() {
 								<li>MEDICLAIM and INSURANCE Facililty Available.</li>
 								<li>Sound Proof GENSET 15KV  enough to provide Electricity to the Nursing Home.</li>
 								<li>In House MEDICAL STORE and BLOOD COLLECTION CENTER for the Ease Of Treatment Process.</li>
+								<li>World class operation table BEN-Q.</li>
 							</ul>
 						</div>
 					</div>
@@ -171,12 +172,12 @@ function off() {
 			</div>
 		</section>
 		
-		<section class="ftco-intro" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<section class="ftco-intro" style="background-image: url(images/jpg/bg_3.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				
 					<div class="col-md-12">
-						<h2>Your Health is Our Top Priority with Comprehensive, Affordable medical.</h2>
+						<h2>Your Health is Our Top Priority with Comprehensive, Affordable Medical Care.</h2>
 						
 					</div>
 					
@@ -195,21 +196,21 @@ function off() {
           </div>
         </div>	
 				<div class="row">
-					<div class="col-md-6 col-lg-6 ftco-animate">
+					<div class="col-md-6 col-lg-4 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/DrAsif.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url(images/jpg/DrAsif.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Dr. MOHAMMED ASIF ANSARI</h3>
 								<span class="position mb-2">Laparoscopic,Anorectal and General Surgeon</span>
 								<div class="faded">
 									<p>M.S(GEN.SURGERY);MBBS;
-									FICS(USA);FAIS;FMAS;FIAGES;
+									FICS(USA);FAIS;FMAS;FIAGES;FISCP;
 									</p>
  <p>Associate Professor And Consultant Surgeon GRANT MEDICAL COLLEGE,DEPT OF GEN.SURGERY.J.J HOSPITAL MUMBAI.
 </p>
-<h5>Time:   5.30pm-8pm (Monday-Saturday)</h5>
+								<h5>Time: 5.30pm-8pm (Monday-Saturday)</h5>
 									<ul class="ftco-social text-center">
 		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -220,17 +221,18 @@ function off() {
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-6 ftco-animate">
+					<div class="col-md-6 col-lg-4 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(images/Dr.Naila.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url(images/jpg/Dr.Naila.jpg);"></div>
 							</div>
 							<div class="text pt-3 text-center">
 								<h3>Dr. NAILA ASIF ANSARI</h3>
 								<span class="position mb-2">Infertility specialist,Laparoscopic surgeon,Gynaecologist and Obstetrician </span>
 								<div class="faded">
 									<p>DGO;CPS;FCPS;DFP;FMAS;MBBS.</p>
-									<ul class="ftco-social text-center">
+									<h5>Time:   11am - 3pm (Monday-Saturday)</h5>
+						<ul class="ftco-social text-center">
 		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
 		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
@@ -240,6 +242,28 @@ function off() {
 							</div>
 						</div>
 					</div>
+					<div class="col-md-6 col-lg-4 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/jpg/DrKhalid.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3>Dr. KHALID ANSARI</h3>
+								<span class="position mb-2">CONSULTING PHYSICIAN AND INTENSIVIST</span>
+								<div class="faded">
+									<p>M.D(MEDICINE);DNB(CRITICAL CARE).</p>
+ 						<h5>Time: 5.30pm-8pm (Monday-Saturday)</h5>
+						<ul class="ftco-social text-center">
+		                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+		                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+		              </ul>
+	              </div>
+							</div>
+						</div>
+					</div>
+
 					
 				</div>
 			</div>

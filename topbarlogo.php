@@ -13,8 +13,8 @@
 					    </div>
 					    <div class="col-md pr-6 d-flex topper align-items-center">
 					    	<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text a">Email : <a href="mailto:damasif4@gmail.com">damasif4@gmail.com</a>,
-           						<a href="alhayatnursinghome2006@gmail.com">alhayatnursinghome2006@gmail.com</a></span>
+						    <span class="text a">Email : <a href="mailto:damasif4@gmail.com">damasif4@gmail.com</a>
+           						</span>
 					    </div>
 					    <div class="col-md pr-6 d-flex topper align-items-center">
 					    	<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>

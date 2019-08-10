@@ -38,7 +38,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
             <h1 class="mb-2 bread">About Us</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
@@ -47,14 +47,14 @@
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/Dr.jpg);">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url(images/jpg/Dr.jpg);">
 					</div>
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
 	          	<div class="pl-md-5 ml-md-5">
 		          	<span class="subheading">About Al-Hayat</span>
-		            <h2 class="mb-4" style="font-size: 28px;">AL-HAYAT NURSING HOME founded by DR.MOHAMMED ASIF ANWAR ALI ANSARI in 
-                        2006 with the intention of providing quality care at Affordable Cost.</h2>
+		            <h2 class="mb-4" style="font-size: 28px;">AL-HAYAT NURSING HOME <span style="font-size: 24px;">founded by </span>DR.MOHAMMED ASIF ANWAR ALI ANSARI 
+                <span style="font-size: 24px;">in 2006 with the intention of providing quality care at Affordable Cost.</span></h2>
 	            </div>
 	          </div>
 			  <div class="heading-section mb-5">
@@ -63,8 +63,8 @@
 							<ul>
 								<li>Qualified,Experienced and Expert Doctor Team.</li>
 								<li>DR.MOHAMMED ASIF ANSARI is Consulting Advanced Laparoscopic and Anorectal Surgeon</li>
-								<li>DR.NAILA ASIF ANSARI is Consulting Gynaecologist and Obstetrician.Infertility Specialist and Laparoscopic Surgeon.</li>
-								<li>DR.KHALID ANSARI is Consulting Physician and Intensivist.Expert in Clinical Care Management.</li>
+								<li>DR.NAILA ASIF ANSARI is Consulting Gynaecologist and Obstetrician. Infertility Specialist and Laparoscopic Surgeon.</li>
+								<li>DR.KHALID ANSARI is Consulting Physician and Intensivist. Expert in Critical Care Management.</li>
 								<li>Treatment For Planned and Emergency Cases.</li>
 								<li>Highly Maintained Neet and Clean Premise.</li>
 								<li>Qualified and Experienced Supporting Staff Team,Ready to Help Patient in Need Any Time.</li>
@@ -76,7 +76,8 @@
 								<li>MEDICLAIM and INSURANCE Facililty Available.</li>
 								<li>Sound Proof GENSET 15KV  enough to provide Electricity to the Nursing Home.</li>
 								<li>In House MEDICAL STORE and BLOOD COLLECTION CENTER for the Ease Of Treatment Process.</li>
-							</ul>
+                <li>World class operation table BEN-Q.</li>
+            	</ul>
 						</div>
 					</div>
 				</div>

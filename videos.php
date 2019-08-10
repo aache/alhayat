@@ -37,7 +37,7 @@
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
             <h1 class="mb-2 bread">Videos</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Videos <i class="ion-ios-arrow-forward"></i></span></p>
+            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Videos <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@
 		
 		<section class="ftco-section">
 			<div class="container">
-			<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLt-bxnq21P5uaaJLPpfE9dWSnEH7YUY3u" frameborder="0" 
+			<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLt-bxnq21P5uYJgswseYTEINAL9NQchv7" frameborder="0" 
 			allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 			</div>
