@@ -75,7 +75,7 @@
 			<img src="images/jpg/Gward1.jpg" onclick="myFunction(this);" alt="General Ward 1" >
 		</div>
 		<div class="gallery">
- 			<img src="images/jpg/PRoom1.jpg" onclick="myFunction(this);" alt="Private Room 1">
+ 			 <img src="images/jpg/PRoom1.jpg" onclick="myFunction(this);" alt="Private Room 1">
 		 </div>
 		 <div class="gallery">
 			 <img src="images/jpg/PRoom2.jpg" onclick="myFunction(this);" alt="Private Room 2" >	
@@ -114,7 +114,7 @@
 			<img src="images/jpg/Machine4.jpg" onclick="myFunction(this);" alt="Machine 4"  >
 		</div>
 		<div class="gallery">
-			 <img src="images/jpg/Gward2.jpg" onclick="myFunction(this);" alt="General ward 2">	
+			  <img src="images/jpg/Gward2.jpg" onclick="myFunction(this);" alt="General ward 2">	
 		</div>
 		 <div class="gallery">
 			 <img src="images/jpg/medical.jpg" onclick="myFunction(this);" alt="Medical" >	

@@ -52,7 +52,7 @@
 					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
 	          <div class="heading-section mb-5">
 	          	<div class="pl-md-5 ml-md-5">
-		          	<span class="subheading">About Al-Hayat</span>
+		          	<span class="subheading">About AL-HAYAT NURSING HOME</span>
 		            <h2 class="mb-4" style="font-size: 28px;">AL-HAYAT NURSING HOME <span style="font-size: 24px;">founded by </span>DR.MOHAMMED ASIF ANWAR ALI ANSARI 
                 <span style="font-size: 24px;">in 2006 with the intention of providing quality care at Affordable Cost.</span></h2>
 	            </div>
