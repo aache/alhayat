@@ -16,5 +16,5 @@ include 'connection.php';
 
     $email_content = 'Welcome '.$name .', <br/>' . '<br/> Question :' . $question . '<br/> <b>Reply :</b>'.$content ;
     echo $email_content ; 
-  //  mail($email_id,'Queries',$email_content, $headers);  
+    mail($email_id,'Queries',$email_content, $headers);  
 ?>

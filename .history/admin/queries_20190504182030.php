@@ -169,7 +169,7 @@
   <!--script src="js/demo/chart-pie-demo.js"></script-->
   <script type="text/javascript">
      function replyToQuery(queries_id){
-        window.location = /*window.location.hostname +*/"/admin/query_reply.php?id=" + queries_id ; 
+        window.location = window.location.hostname +"/admin/query_reply.php?id=" + queries_id ; 
      }
   </script>
 </body>
